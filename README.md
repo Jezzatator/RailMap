@@ -21,6 +21,12 @@ RailMap est un tracker de voyage en train. Elle permet de voyager sans stress, d
 - Creation API RailMap avec Vapor et interface web
 
 
+## Environment
+[(https://img.shields.io/badge/any_text-you_like-blue)]
+<iOS>-<iOS 15.0 and later>
+<Xcode>-<Xcode 13.0>
+<SwiftUI>-<SwiftUI 3>
+
 ## Instalation
 
 Pour installer cette application iOS depuis le projet Xcode, suivez ces étapes simples :
@@ -49,7 +55,7 @@ C'est tout ! Vous avez maintenant installé et exécuté l'application iOS à pa
 
 ## Licence
 
-[MIT License](https://choosealicense.com/licenses/mit/)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
 Copyright (c) 2023 Jérémie P 
 
