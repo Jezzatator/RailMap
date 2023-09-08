@@ -23,13 +23,10 @@ RailMap est un tracker de voyage en train. Elle permet de voyager sans stress, d
 
 ## Environment
 
-![Static Badge](https://img.shields.io/badge/iOS-iOS_17.0-brightgreen)
+![Badge](https://img.shields.io/badge/iOS-iOS_17.0-brightgreen)
 
-![Static Badge](https://img.shields.io/badge/Xcode-Xcode_15.0-blue)
+![Badge](https://img.shields.io/badge/Xcode-Xcode_15.0-blue)
 
-<iOS>-< and later>
-<Xcode>-<Xcode 13.0>
-<SwiftUI>-<SwiftUI 3>
 
 ## Instalation
 
