@@ -13,7 +13,7 @@ RailMap est un tracker de voyage en train. Elle permet de voyager sans stress, d
 
 ![Simulator Screenshot - iPhone 14 Pro - 2023-09-08 at 16 18 20](https://github.com/Jezzatator/RailMap/assets/84284069/6d8ee4c8-67bd-4dbb-a326-57667d574853)
 
-## Cahier des charches 
+## Cahier des charges 
 
 - Utilisation de l'API Navitia
 - Utilisation de OSM/OpenRailwayMap
