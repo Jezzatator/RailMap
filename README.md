@@ -13,6 +13,13 @@ RailMap est un tracker de voyage en train. Elle permet de voyager sans stress, d
 
 ![Simulator Screenshot - iPhone 14 Pro - 2023-09-08 at 16 18 20](https://github.com/Jezzatator/RailMap/assets/84284069/6d8ee4c8-67bd-4dbb-a326-57667d574853)
 
+## Cahier des charches 
+
+- Utilisation de l'API Navitia
+- Utilisation de OSM/OpenRailwayMap
+- Utilisation de MapKit pour rendu des trajets
+- Creation API RailMap avec Vapor et interface web
+
 
 ## Instalation
 
@@ -41,6 +48,10 @@ Une fois la compilation terminée, l'application devrait s'ouvrir automatiquemen
 C'est tout ! Vous avez maintenant installé et exécuté l'application iOS à partir du projet Xcode avec succès.
 
 ## Licence
+
+MIT License
+
+Copyright (c) 2023 Jérémie P 
 
 ## Auteur
 
