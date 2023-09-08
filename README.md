@@ -49,7 +49,7 @@ C'est tout ! Vous avez maintenant installé et exécuté l'application iOS à pa
 
 ## Licence
 
-MIT License
+[MIT License](https://choosealicense.com/licenses/mit/)
 
 Copyright (c) 2023 Jérémie P 
 
