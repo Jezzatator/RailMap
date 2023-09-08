@@ -28,7 +28,7 @@ Pour installer cette application iOS depuis le projet Xcode, suivez ces étapes 
 1 - Cloner le Référentiel (Repository)
 Tout d'abord, clonez ce référentiel sur votre machine locale en utilisant la commande suivante dans votre terminal :
 
-git clone [https://github.com/Jezzatator/RailMap.git](https://github.com/Jezzatator/RailMap.git)
+git clone https://github.com/Jezzatator/RailMap.git
 
 2 - Ouvrir le Projet Xcode
 Ouvrez Xcode sur votre Mac.
