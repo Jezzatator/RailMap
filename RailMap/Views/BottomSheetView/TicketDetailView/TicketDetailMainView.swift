@@ -14,11 +14,11 @@ struct TicketDetailMainView: View {
     var body: some View {
         VStack(spacing: 16.0) {
             HStack(spacing: .zero) {
-                BlockView(key: "TRAIN NUM", value: ticketInfo.flightNumber, rows: 3)
+                BlockView(key: "TRAIN NUM", value: ticketInfo.trainNumber, rows: 3)
                 Divider()
-                BlockView(key: "QUAIE", value: ticketInfo.terminal, rows: 3)
+                BlockView(key: "HALL", value: ticketInfo.hall, rows: 3)
                 Divider()
-                BlockView(key: "VOITURE", value: ticketInfo.gate, rows: 3)
+                BlockView(key: "VOIE", value: ticketInfo.platform, rows: 3)
             }
             Divider()
             HStack(spacing: .zero) {

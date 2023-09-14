@@ -10,7 +10,7 @@ import SwiftUI
 struct TicketListFooterView: View {
     var body: some View {
         VStack(alignment: .leading) {
-            ForEach(FlightType.allCases, id: \.self) { type in
+            ForEach(TrainType.allCases, id: \.self) { type in
                 HStack {
                     Image(systemName: "train.side.front.car")
                         .resizable()
