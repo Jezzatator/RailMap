@@ -10,26 +10,33 @@ import Foundation
 import SwiftUI
 
 struct BottomSheetViewLarge: View {
+    @State private var showingSheet = false
     @StateObject private var viewModel = TicketListViewModel()
 
     var body: some View {
         NavigationView {
             VStack {
-                HStack {
-                    Text("My Journeys")
-                        .fontWeight(.bold)
-                        .multilineTextAlignment(.leading)
-                        .font(.title)
-                    Spacer()
+                Group {
+                    HStack {
+                        Text("My Journeys")
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.leading)
+                            .font(.title)
+                        Spacer()
+                        Button(action: {showingSheet.toggle()}, label: {
+                            Image(systemName: "plus").foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                        })
+                    }
+                    TextField("Search Journey", text:
+                            .constant(""))
+                    .padding(.vertical, 10)
+                    .padding(.horizontal)
+                    .background {
+                        RoundedRectangle(cornerRadius: 10, style: .continuous)
+                            .fill(.ultraThinMaterial)
+                    }
                 }
-                TextField("Search Journey", text:
-                        .constant(""))
-                .padding(.vertical, 10)
-                .padding(.horizontal)
-                .background {
-                    RoundedRectangle(cornerRadius: 10, style: .continuous)
-                        .fill(.ultraThinMaterial)
-                }
+                .padding(.horizontal, 15)
                     List {
                         Section {
                             ForEach(viewModel.ticketList.indices, id: \.self) { index in
@@ -47,9 +54,11 @@ struct BottomSheetViewLarge: View {
                 }
                 Spacer()
             }
-            .padding()
             .padding(.top)
         }
+        .fullScreenCover(isPresented: $showingSheet, content: {
+            AddTicket()
+        })
     }
 }
 
