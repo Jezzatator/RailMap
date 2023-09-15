@@ -9,27 +9,27 @@ import SwiftUI
 
 // MARK: - TicketInfo
 struct TicketInfo: Decodable {
-    let trainType: TrainType
-    let departure: String
-    let departureCode: String
-    let destination: String
-    let destinationCode: String
-    let `operator`: String
-    let trainNumber: String
-    let hall: String
-    let platform: String
-    let date: String
-    let boardingTime: String
-    let departureTime: String
-    let arrivalTime: String
-    let journeyTime: String
-    let seatNumber: String
-    let passenger: String
-    let passportNumber: String
-    let eTicketNumber: String
-    let bookingCode: String
-    let payment: String
-    let price: String
+    var trainType: TrainType
+    var departure: String
+    var departureCode: String
+    var destination: String
+    var destinationCode: String
+    var compagny: String
+    var trainNumber: String
+    var hall: String
+    var platform: String
+    var date: String
+    var boardingTime: String
+    var departureTime: String
+    var arrivalTime: String
+    var journeyTime: String
+    var seatNumber: String
+    var passenger: String
+    var passportNumber: String
+    var eTicketNumber: String
+    var bookingCode: String
+    var payment: String
+    var price: String
 
     enum CodingKeys: String, CodingKey {
         case trainType = "train_type"
@@ -37,7 +37,7 @@ struct TicketInfo: Decodable {
         case departureCode = "departure_code"
         case destination
         case destinationCode = "destination_code"
-        case `operator` = "operator"
+        case compagny = "compagny"
         case trainNumber = "train_number"
         case hall
         case platform
@@ -74,7 +74,7 @@ let sampleTicketData: [TicketInfo] = [
     TicketInfo(trainType: .domestic,
                departure: "Paris", departureCode: "Gare de Lyon",
                destination: "Perpignan", destinationCode: "Gare de Perpignan",
-               operator: "SNCF", trainNumber: "66111",
+               compagny: "SNCF", trainNumber: "66111",
                hall: "3", platform: "105",
                date: "4 Juin", boardingTime: "22:25",
                departureTime: "22:55", arrivalTime: "15:20",

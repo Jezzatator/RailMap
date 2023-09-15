@@ -10,10 +10,13 @@ import SwiftData
 
 @main
 struct RailMapApp: App {
+    
+    @StateObject var addTicketInfoVM = AddTicketInfo()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(addTicketInfoVM)
         }
     }
 }
