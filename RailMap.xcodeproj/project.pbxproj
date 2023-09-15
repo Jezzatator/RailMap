@@ -29,6 +29,10 @@
 		863D04452AAB4DE900632672 /* TicketDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D04422AAB4DE900632672 /* TicketDetailView.swift */; };
 		863D04462AAB4DE900632672 /* TicketDetailMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D04432AAB4DE900632672 /* TicketDetailMainView.swift */; };
 		868AC9182AB34759002DA720 /* AddTicketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AC9172AB34759002DA720 /* AddTicketViewModel.swift */; };
+		868AC91C2AB44127002DA720 /* Section1AddTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AC91B2AB44127002DA720 /* Section1AddTicketView.swift */; };
+		868AC91F2AB446F9002DA720 /* Section2SubtitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AC91E2AB446F9002DA720 /* Section2SubtitleView.swift */; };
+		868AC9212AB4489E002DA720 /* listStopPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AC9202AB4489E002DA720 /* listStopPointView.swift */; };
+		868AC9242AB482D4002DA720 /* AddTicketInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AC9232AB482D4002DA720 /* AddTicketInfo.swift */; };
 		869821A12AB1EE6E0014BDC2 /* AddTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869821A02AB1EE6E0014BDC2 /* AddTicketView.swift */; };
 		869821A32AB1F5C40014BDC2 /* TicketInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869821A22AB1F5C40014BDC2 /* TicketInfo.swift */; };
 		86F87B632AA35E8D00F7B710 /* RailMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F87B622AA35E8D00F7B710 /* RailMapApp.swift */; };
@@ -61,6 +65,10 @@
 		863D04432AAB4DE900632672 /* TicketDetailMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketDetailMainView.swift; sourceTree = "<group>"; };
 		868AC9172AB34759002DA720 /* AddTicketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTicketViewModel.swift; sourceTree = "<group>"; };
 		868AC9192AB3603C002DA720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		868AC91B2AB44127002DA720 /* Section1AddTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section1AddTicketView.swift; sourceTree = "<group>"; };
+		868AC91E2AB446F9002DA720 /* Section2SubtitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section2SubtitleView.swift; sourceTree = "<group>"; };
+		868AC9202AB4489E002DA720 /* listStopPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listStopPointView.swift; sourceTree = "<group>"; };
+		868AC9232AB482D4002DA720 /* AddTicketInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTicketInfo.swift; sourceTree = "<group>"; };
 		869821A02AB1EE6E0014BDC2 /* AddTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTicketView.swift; sourceTree = "<group>"; };
 		869821A22AB1F5C40014BDC2 /* TicketInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketInfo.swift; sourceTree = "<group>"; };
 		86F87B5F2AA35E8D00F7B710 /* RailMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RailMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +100,7 @@
 		863D040F2AAB20C700632672 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				868AC91A2AB440C2002DA720 /* AddTicket */,
 				863D04242AAB4CFA00632672 /* Component */,
 				863D04212AAB469900632672 /* BottomSheetView */,
 				863D041E2AAB436C00632672 /* Map */,
@@ -163,7 +172,6 @@
 		863D04212AAB469900632672 /* BottomSheetView */ = {
 			isa = PBXGroup;
 			children = (
-				8698219F2AB1EE590014BDC2 /* AddTicket */,
 				863D04222AAB46B500632672 /* BottomSheetView.swift */,
 				863D04402AAB4DD900632672 /* TicketDetailView */,
 				863D042D2AAB4D3B00632672 /* TicketList */,
@@ -195,6 +203,7 @@
 		863D04342AAB4D6D00632672 /* Tickets */ = {
 			isa = PBXGroup;
 			children = (
+				868AC9222AB482B3002DA720 /* AddTicket */,
 				863D04352AAB4D7D00632672 /* TicketInfoMock.swift */,
 				863D04362AAB4D7D00632672 /* TicketList.swift */,
 				869821A22AB1F5C40014BDC2 /* TicketInfo.swift */,
@@ -224,15 +233,34 @@
 		868AC9162AB34744002DA720 /* AddTicketVM */ = {
 			isa = PBXGroup;
 			children = (
+				868AC9232AB482D4002DA720 /* AddTicketInfo.swift */,
 				868AC9172AB34759002DA720 /* AddTicketViewModel.swift */,
 			);
 			path = AddTicketVM;
 			sourceTree = "<group>";
 		};
-		8698219F2AB1EE590014BDC2 /* AddTicket */ = {
+		868AC91A2AB440C2002DA720 /* AddTicket */ = {
 			isa = PBXGroup;
 			children = (
+				868AC91D2AB446DC002DA720 /* Section 2 */,
 				869821A02AB1EE6E0014BDC2 /* AddTicketView.swift */,
+				868AC91B2AB44127002DA720 /* Section1AddTicketView.swift */,
+			);
+			path = AddTicket;
+			sourceTree = "<group>";
+		};
+		868AC91D2AB446DC002DA720 /* Section 2 */ = {
+			isa = PBXGroup;
+			children = (
+				868AC91E2AB446F9002DA720 /* Section2SubtitleView.swift */,
+				868AC9202AB4489E002DA720 /* listStopPointView.swift */,
+			);
+			path = "Section 2";
+			sourceTree = "<group>";
+		};
+		868AC9222AB482B3002DA720 /* AddTicket */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = AddTicket;
 			sourceTree = "<group>";
@@ -348,6 +376,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				868AC91C2AB44127002DA720 /* Section1AddTicketView.swift in Sources */,
+				868AC9212AB4489E002DA720 /* listStopPointView.swift in Sources */,
 				863D043A2AAB4D9800632672 /* TicketListViewModel.swift in Sources */,
 				869821A32AB1F5C40014BDC2 /* TicketInfo.swift in Sources */,
 				863D042C2AAB4D3300632672 /* RoundedCorner.swift in Sources */,
@@ -358,8 +388,10 @@
 				863D042B2AAB4D3300632672 /* BlockView.swift in Sources */,
 				863D04152AAB253500632672 /* VehiculeJourneysModel.swift in Sources */,
 				863D04332AAB4D5E00632672 /* TicketListFooterView.swift in Sources */,
+				868AC9242AB482D4002DA720 /* AddTicketInfo.swift in Sources */,
 				868AC9182AB34759002DA720 /* AddTicketViewModel.swift in Sources */,
 				86F87B652AA35E8D00F7B710 /* ContentView.swift in Sources */,
+				868AC91F2AB446F9002DA720 /* Section2SubtitleView.swift in Sources */,
 				869821A12AB1EE6E0014BDC2 /* AddTicketView.swift in Sources */,
 				863D04292AAB4D3300632672 /* LineShape.swift in Sources */,
 				863D04312AAB4D5E00632672 /* TicketListRowView.swift in Sources */,

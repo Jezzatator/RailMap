@@ -15,7 +15,7 @@ struct TicketListRowView: View {
         HStack {
             VStack(alignment: .leading) {
                 Text(ticketInfo.date)
-                    .font(.custom("Futura-Medium", size: 15.0, relativeTo: .subheadline))
+                    .font(.custom("Futura-Medium", size: 12.0, relativeTo: .subheadline))
             }
             .frame(width: 40.0, alignment: .leading)
             Divider()
@@ -40,7 +40,7 @@ struct TicketListRowView: View {
                     .frame(width: 20.0)
                     .foregroundColor(ticketInfo.trainType.themeColor)
                     .padding(.all, 3)
-                Text(ticketInfo.operator)
+                Text(ticketInfo.compagny)
                     .font(.caption2)
                     .fontWeight(.semibold)
                     .foregroundColor(.gray)
