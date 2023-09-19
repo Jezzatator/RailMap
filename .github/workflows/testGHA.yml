@@ -21,9 +21,9 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd Convertator
+          cd RailMap
 
       - name: Build and run tests
         run: |
-          xcodebuild clean build analyze -scheme Convertator -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12'
+          xcodebuild clean build analyze -scheme RailMap -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12'
           
