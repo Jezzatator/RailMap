@@ -39,7 +39,21 @@
 		86F87B652AA35E8D00F7B710 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F87B642AA35E8D00F7B710 /* ContentView.swift */; };
 		86F87B672AA35E8D00F7B710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86F87B662AA35E8D00F7B710 /* Assets.xcassets */; };
 		86F87B6A2AA35E8D00F7B710 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86F87B692AA35E8D00F7B710 /* Preview Assets.xcassets */; };
+		86FD8F692AB9CDE4006D113C /* RailMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FD8F682AB9CDE4006D113C /* RailMapTests.swift */; };
+		86FD8F702AB9CE2D006D113C /* AddTicketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FD8F6F2AB9CE2D006D113C /* AddTicketTests.swift */; };
+		86FD8F712AB9D40B006D113C /* VehiculeJourneysModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D04142AAB253500632672 /* VehiculeJourneysModel.swift */; };
+		86FD8F722AB9D412006D113C /* AddTicketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AC9172AB34759002DA720 /* AddTicketViewModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		86FD8F6A2AB9CDE4006D113C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86F87B572AA35E8C00F7B710 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86F87B5E2AA35E8C00F7B710;
+			remoteInfo = RailMap;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		863D04142AAB253500632672 /* VehiculeJourneysModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiculeJourneysModel.swift; sourceTree = "<group>"; };
@@ -76,10 +90,20 @@
 		86F87B642AA35E8D00F7B710 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		86F87B662AA35E8D00F7B710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86F87B692AA35E8D00F7B710 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		86FD8F662AB9CDE4006D113C /* RailMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RailMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86FD8F682AB9CDE4006D113C /* RailMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailMapTests.swift; sourceTree = "<group>"; };
+		86FD8F6F2AB9CE2D006D113C /* AddTicketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTicketTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		86F87B5C2AA35E8C00F7B710 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86FD8F632AB9CDE4006D113C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -269,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				86F87B612AA35E8D00F7B710 /* RailMap */,
+				86FD8F672AB9CDE4006D113C /* RailMapTests */,
 				86F87B602AA35E8D00F7B710 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -277,6 +302,7 @@
 			isa = PBXGroup;
 			children = (
 				86F87B5F2AA35E8D00F7B710 /* RailMap.app */,
+				86FD8F662AB9CDE4006D113C /* RailMapTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -305,6 +331,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		86FD8F672AB9CDE4006D113C /* RailMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				86FD8F682AB9CDE4006D113C /* RailMapTests.swift */,
+				86FD8F6F2AB9CE2D006D113C /* AddTicketTests.swift */,
+			);
+			path = RailMapTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -325,6 +360,24 @@
 			productReference = 86F87B5F2AA35E8D00F7B710 /* RailMap.app */;
 			productType = "com.apple.product-type.application";
 		};
+		86FD8F652AB9CDE4006D113C /* RailMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86FD8F6E2AB9CDE4006D113C /* Build configuration list for PBXNativeTarget "RailMapTests" */;
+			buildPhases = (
+				86FD8F622AB9CDE4006D113C /* Sources */,
+				86FD8F632AB9CDE4006D113C /* Frameworks */,
+				86FD8F642AB9CDE4006D113C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86FD8F6B2AB9CDE4006D113C /* PBXTargetDependency */,
+			);
+			name = RailMapTests;
+			productName = RailMapTests;
+			productReference = 86FD8F662AB9CDE4006D113C /* RailMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -337,6 +390,10 @@
 				TargetAttributes = {
 					86F87B5E2AA35E8C00F7B710 = {
 						CreatedOnToolsVersion = 15.0;
+					};
+					86FD8F652AB9CDE4006D113C = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 86F87B5E2AA35E8C00F7B710;
 					};
 				};
 			};
@@ -354,6 +411,7 @@
 			projectRoot = "";
 			targets = (
 				86F87B5E2AA35E8C00F7B710 /* RailMap */,
+				86FD8F652AB9CDE4006D113C /* RailMapTests */,
 			);
 		};
 /* End PBXProject section */
@@ -366,6 +424,13 @@
 				86F87B6A2AA35E8D00F7B710 /* Preview Assets.xcassets in Resources */,
 				86F87B672AA35E8D00F7B710 /* Assets.xcassets in Resources */,
 				863D043E2AAB4DAC00632672 /* TicketList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86FD8F642AB9CDE4006D113C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,7 +473,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		86FD8F622AB9CDE4006D113C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86FD8F722AB9D412006D113C /* AddTicketViewModel.swift in Sources */,
+				86FD8F712AB9D40B006D113C /* VehiculeJourneysModel.swift in Sources */,
+				86FD8F692AB9CDE4006D113C /* RailMapTests.swift in Sources */,
+				86FD8F702AB9CE2D006D113C /* AddTicketTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86FD8F6B2AB9CDE4006D113C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86F87B5E2AA35E8C00F7B710 /* RailMap */;
+			targetProxy = 86FD8F6A2AB9CDE4006D113C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		86F87B6D2AA35E8D00F7B710 /* Debug */ = {
@@ -590,6 +674,42 @@
 			};
 			name = Release;
 		};
+		86FD8F6C2AB9CDE4006D113C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MZ3E779E6C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jeremie-ada.RailMapTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RailMap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RailMap";
+			};
+			name = Debug;
+		};
+		86FD8F6D2AB9CDE4006D113C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MZ3E779E6C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jeremie-ada.RailMapTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RailMap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RailMap";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -607,6 +727,15 @@
 			buildConfigurations = (
 				86F87B702AA35E8D00F7B710 /* Debug */,
 				86F87B712AA35E8D00F7B710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86FD8F6E2AB9CDE4006D113C /* Build configuration list for PBXNativeTarget "RailMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86FD8F6C2AB9CDE4006D113C /* Debug */,
+				86FD8F6D2AB9CDE4006D113C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

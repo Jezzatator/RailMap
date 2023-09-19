@@ -38,7 +38,7 @@ class AddTicketViewModel: ObservableObject {
             }
         }
     
-    func convertCalendarToDDMMYY(calendar: Calendar) -> [String]? {
+    public func convertCalendarToDDMMYY(calendar: Calendar) -> [String]? {
         guard let activePeriod = calendar.activePeriods.first else {
             return nil // Aucune période active
         }
