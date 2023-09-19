@@ -169,5 +169,141 @@ final class AddTicketTests: XCTestCase {
         XCTAssertEqual(result, "02 February")
     }
     
+    func testFormatDateLettre_NA() {
+        let dateToFormat = "02/"
+        
+        let result = viewModel.formatDateLettre(dateToFormat)
+        
+        XCTAssertEqual(result, "N/A")
+    }
+    
+    func testFormatDateLettre_020202() {
+        let dateToFormat = "02/02/02"
+        
+        let result = viewModel.formatDateLettre(dateToFormat)
+        
+        XCTAssertEqual(result, "02 February")
+    }
+    
+    func testextractName_TGVINOUI() {
+        let id = "StopPoint:OCETGV INOUI-87686006"
+        
+        let result = viewModel.extractName(from: id)
+        
+        XCTAssertEqual(result, "TGV INOUI")
+    }
+    
+    func testextractName_Lyria() {
+        let id = "StopPoint:OCELyria-87686006"
+        
+        let result = viewModel.extractName(from: id)
+        
+        XCTAssertEqual(result, "Lyria")
+    }
+    
+    func testextractName_TER() {
+        let id = "StopPoint:OCETrain TER-87682005"
+        
+        let result = viewModel.extractName(from: id)
+        
+        XCTAssertEqual(result, "Train TER")
+    }
+    
+    func testextractName_Intercites() {
+        let id = "stop_point:SIN:OCEINTERCITES-87547000"
+        
+        let result = viewModel.extractName(from: id)
+        
+        XCTAssertEqual(result, "INTERCITES")
+    }
+    
+    func testextractName_Ouigo() {
+        let id = "StopPoint:OCEOUIGO-87543017"
+        
+        let result = viewModel.extractName(from: id)
+        
+        XCTAssertEqual(result, "OUIGO")
+    }
 
+    func testextractName_Car_TER() {
+        let id = "StopPoint:OCECar TER-87741009"
+        
+        let result = viewModel.extractName(from: id)
+        
+        XCTAssertEqual(result, "Car TER")
+    }
+    
+    func testextractName_ICE() {
+        let id = "StopPoint:OCEICE-87113001"
+        
+        let result = viewModel.extractName(from: id)
+        
+        XCTAssertEqual(result, "ICE")
+    }
+    
+    func testextractName_Numbers() {
+        let id = "87113001"
+        
+        let result = viewModel.extractName(from: id)
+        
+        XCTAssertEqual(result, "")
+    }
+    
+    func testformattedHour_000000() {
+        let time = "000000"
+        
+        let result = viewModel.formattedHour(from: time)
+        
+        XCTAssertEqual(result, "00:00")
+    }
+    
+    func testformattedHour_165600() {
+        let time = "165600"
+        
+        let result = viewModel.formattedHour(from: time)
+        
+        XCTAssertEqual(result, "16:56")
+    }
+    
+    func testformattedHour_185900() {
+        let time = "185900"
+        
+        let result = viewModel.formattedHour(from: time)
+        
+        XCTAssertEqual(result, "18:59")
+    }
+    
+    func testformattedHour_065600() {
+        let time = "065600"
+        
+        let result = viewModel.formattedHour(from: time)
+        
+        XCTAssertEqual(result, "06:56")
+    }
+    
+    func testformattedHour_11220() {
+        let time = "112200"
+        
+        let result = viewModel.formattedHour(from: time)
+        
+        XCTAssertEqual(result, "11:22")
+    }
+    
+    func testformattedHour_Empty() {
+        let time = ""
+        
+        let result = viewModel.formattedHour(from: time)
+        
+        XCTAssertEqual(result, "00:00")
+    }
+    
+    func testformattedHour_Letters() {
+        let time = "prout"
+        
+        let result = viewModel.formattedHour(from: time)
+        
+        XCTAssertEqual(result, "Erreur, mauvais format de date")
+    }
+
+    
 }

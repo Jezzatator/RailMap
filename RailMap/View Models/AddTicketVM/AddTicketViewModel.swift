@@ -139,7 +139,7 @@ class AddTicketViewModel: ObservableObject {
         if let date = formatter.date(from: dateString) {
             return dateFormatter.string(from: date)
         }
-        return ""
+        return "Erreur, mauvais format de date"
     }
     
 }
