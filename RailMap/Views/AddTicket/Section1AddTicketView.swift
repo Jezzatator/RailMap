@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Section1AddTicketView: View {
-    
+       
     @StateObject var viewModel: AddTicketViewModel
     @EnvironmentObject var addTicketInfoVM: AddTicketInfo
     
@@ -31,12 +31,14 @@ struct Section1AddTicketView: View {
                         .frame(height: 44, alignment: .center)
                         .background(.thinMaterial)
                         .cornerRadius(10)
-                        .keyboardType(.decimalPad)
-                        .onChange(of: trainNum) {
+                        .keyboardType(.namePhonePad)
+                        .submitLabel(.search)
+                        .onSubmit {
                             Task {
                                 await viewModel.fetchHeadsignAddTicket(headsign: trainNum)
                             }
                         }
+                        .scrollDismissesKeyboard(.interactively)
     
     }
 }

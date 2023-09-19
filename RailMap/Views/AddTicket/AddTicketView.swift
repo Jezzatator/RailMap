@@ -27,8 +27,6 @@ struct AddTicket: View {
     @State var Arrival: String?
     
 
-    
-
     var body: some View {
         NavigationView {
             VStack {
