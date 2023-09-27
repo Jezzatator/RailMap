@@ -18,7 +18,11 @@ RailMap est un tracker de voyage en train. Elle permet de voyager sans stress, d
 - Utilisation de l'API Navitia
 - Utilisation de OSM/OpenRailwayMap
 - Utilisation de MapKit pour rendu des trajets
+- Creration d'un package pour isoler le module de rendu des données géographiques
 - Creation API RailMap avec Vapor et interface web
+- Creation de websocket entre app mobile et API pour gerer les MAJ de perturbation et annonces de voies
+
+- Automatisation des Unit Test avec GitHub Action et YAML - en pause car non prise en charge de Xcode 15 et iOS 17 par Github Action 
 
 
 ## Environment
