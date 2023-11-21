@@ -10,8 +10,13 @@ import Foundation
 import SwiftUI
 
 struct BottomSheetViewLarge: View {
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: []) var journeys: FetchedResults<Journey>
+    
     @State private var showingSheet = false
+    @State private var showingDetailsView = false
     @StateObject private var viewModel = TicketListViewModel()
+    @Binding var sheetSize: PresentationDetent
 
     var body: some View {
         NavigationView {
@@ -43,6 +48,9 @@ struct BottomSheetViewLarge: View {
                                 NavigationLink(destination: TicketDetailView(ticketInfo: viewModel.ticketList[index])) {
                                     TicketListRowView(ticketInfo: viewModel.ticketList[index])
                                 }
+                            }
+                            .onTapGesture {
+                                sheetSize = .large
                             }
                         } footer: {
                             TicketListFooterView()

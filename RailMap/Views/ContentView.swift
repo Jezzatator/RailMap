@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var showingCredits = true
-    
+    @State private var isSheetPresented = true
+    @State private var sheetSize: PresentationDetent = .height(250)
+
     var body: some View {
         ZStack {
             MapView()
-                .sheet(isPresented: $showingCredits) {
-                    BottomSheetViewLarge()
-                        .presentationDetents([.height(250),.height(500),.large])
+                .sheet(isPresented: $isSheetPresented) {
+                    BottomSheetViewLarge(sheetSize: $sheetSize)
+                        .presentationDetents([.height(250),.height(500),.large], selection: $sheetSize)
                         .presentationBackgroundInteraction(
                             .enabled)
                         .interactiveDismissDisabled()
