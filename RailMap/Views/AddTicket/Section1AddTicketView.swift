@@ -16,33 +16,35 @@ struct Section1AddTicketView: View {
     
     var body: some View {
         
-        HStack {
-            Text("Numéro de Train")
-                .font(.system(size: 12, weight: .regular))
-                .foregroundColor(.gray)
-                .multilineTextAlignment(.leading)
-                .padding(.leading)
-            Spacer()
+        VStack {
+            HStack {
+                Text("Train's number")
+                    .font(.system(size: 12, weight: .regular))
+                    .foregroundColor(.gray)
+                    .multilineTextAlignment(.leading)
+                    .padding(.leading)
+                Spacer()
+            }
+            
+            TextField("Enter your train number", text: $trainNum)
+                .foregroundColor(.black)
+                .frame(height: 44, alignment: .center)
+                .background(.thinMaterial)
+                .cornerRadius(10)
+                .keyboardType(.namePhonePad)
+                .submitLabel(.search)
+                .scrollDismissesKeyboard(.interactively)
         }
-        
-        TextField("Entrez votre numéro de train", text: $trainNum)
-                        .foregroundColor(.black)
-                        .padding(.horizontal)
-                        .frame(height: 44, alignment: .center)
-                        .background(.thinMaterial)
-                        .cornerRadius(10)
-                        .keyboardType(.namePhonePad)
-                        .submitLabel(.search)
-                        .onSubmit {
-                            Task {
-                                await viewModel.fetchHeadsignAddTicket(headsign: trainNum)
-                            }
-                        }
-                        .scrollDismissesKeyboard(.interactively)
-    
+        .padding(.horizontal)
+        .onChange(of: trainNum) {
+            Task {
+                await viewModel.fetchHeadsignAddTicket(headsign: trainNum)
+            }
+        }
     }
 }
 
 #Preview {
-    ContentView()
+    AddTicket()
+        .environmentObject(AddTicketInfo())
 }

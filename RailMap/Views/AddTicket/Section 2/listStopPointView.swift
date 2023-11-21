@@ -18,17 +18,18 @@ struct listStopPointView: View {
     var body: some View {
         
             if !viewModel.vehicleJourneys.isEmpty {
+
+
                 let firstVehicleJourney = viewModel.vehicleJourneys.first
-                
                 let firstStopTimes = firstVehicleJourney?.stopTimes
                 if firstStopTimes != nil {
                     
                     List (firstVehicleJourney?.stopTimes ?? [], id: \.arrivalTime){ stopTime in
-                        
+
                         let stopName = stopTime.stopPoint.name
                         let formattedDepartureTime = viewModel.formattedHour(from: stopTime.departureTime)
                         let formattedArrivalTime = viewModel.formattedHour(from: stopTime.arrivalTime)
-
+                        
                         
                         // Choix du Départ
                         let isLastStopPoint = firstStopTimes?.last?.stopPoint.name == stopName
@@ -71,8 +72,18 @@ struct listStopPointView: View {
                                 }
                             }
                         }
-                    }.onAppear {
-                        addTicketInfoVM.addTicketInfo[0].compagny = viewModel.extractName(from: firstStopTimes?.first?.stopPoint.id ?? "N/A")
+                    }
+//                    .onChange(of: viewModel.vehicleJourneys) { newVehicleJourneys in
+//                        print("Vehicle Journeys changed in listStopPointView: \(newVehicleJourneys[0].stopTimes)")
+//                    }
+
+                    .onAppear {
+                        if let firstStopTime = firstStopTimes?.first {
+                            let stopPointID = firstStopTime.stopPoint.id ?? "N/A"
+                            addTicketInfoVM.addTicketInfo[0].compagny = viewModel.extractName(from: stopPointID)
+                        } else {
+                            print("On Appear - No first stop time available")
+                        }
                     }
                     .listStyle(.plain)
                 } else {
@@ -103,3 +114,12 @@ Text("")                            }
 #Preview {
     ContentView()
 }
+
+extension VehicleJourney: Equatable {
+    static func == (lhs: VehicleJourney, rhs: VehicleJourney) -> Bool {
+        // Comparez les propriétés pertinentes pour déterminer l'égalité
+        // Exemple (à adapter à vos besoins) :
+        return lhs.id == rhs.id
+    }
+}
+

@@ -7,6 +7,6 @@
 
 import SwiftUI
 
-struct TicketInfoMo: Decodable {
-    
+struct Response: Codable {
+    let vehicleJourneys: [VehicleJourney]
 }

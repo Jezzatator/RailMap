@@ -6,17 +6,20 @@
 //
 
 import SwiftUI
-import SwiftData
 
 @main
 struct RailMapApp: App {
     
-    @StateObject var addTicketInfoVM = AddTicketInfo()
+    @StateObject private var dataController = DataController()
+    @StateObject private var addTicketInfo = AddTicketInfo()
+
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(addTicketInfoVM)
+                .environment(\.managedObjectContext, dataController.container.viewContext)
+                .environmentObject(addTicketInfo)
+
         }
     }
 }

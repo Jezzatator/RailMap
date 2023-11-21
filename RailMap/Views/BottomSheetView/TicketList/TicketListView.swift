@@ -11,6 +11,8 @@ struct TicketListView: View {
     
     @StateObject private var viewModel = TicketListViewModel()
     
+    @Binding var sheetSize: PresentationDetent
+    
     var body: some View {
         NavigationView {
             List {
@@ -34,6 +36,6 @@ struct TicketListView: View {
 
 struct TicketListView_Previews: PreviewProvider {
     static var previews: some View {
-        TicketListView()
+        ContentView()
     }
 }

@@ -10,7 +10,7 @@ import SwiftUI
 struct TicketDetailMainView: View {
     
     let ticketInfo: TicketInfo
-    
+        
     var body: some View {
         VStack(spacing: 16.0) {
             HStack(spacing: .zero) {
@@ -62,11 +62,18 @@ struct TicketDetailMainView: View {
         .frame(maxWidth: .infinity)
         .background(Color(UIColor.tertiarySystemBackground))
         .cornerRadius(12.0, corners: [.bottomLeft, .bottomRight])
+        .toolbar {
+            Button {
+                //showingDeleteAlert = true
+            } label: {
+                Label("Delete this book", systemImage: "trash")
+            }
+        }
     }
 }
 
 struct TicketDetailMainView_Previews: PreviewProvider {
     static var previews: some View {
-        TicketDetailMainView(ticketInfo: sampleTicketData[0])
+        ContentView()
     }
 }

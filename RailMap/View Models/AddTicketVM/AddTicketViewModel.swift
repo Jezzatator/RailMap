@@ -13,7 +13,52 @@ class AddTicketViewModel: ObservableObject {
     typealias foundationCalendar = Foundation.Calendar
 
         
-        @Published var vehicleJourneys = [VehicleJourney]()
+    @Published var vehicleJourneys = [VehicleJourney]() {
+        didSet {
+            updateDatePickerVehiculeJourney()
+            print(datePickerVeehicleJourneys)
+        }
+    }
+    @Published var datePickerVeehicleJourneys: [Date: String] = [:]
+    
+    
+    func updateDatePickerVehiculeJourney() {
+        // Code boucle forEach
+        vehicleJourneys.forEach { vehicleJourney in
+            let dateArray = convertCalendarToDDMMYY(calendar:vehicleJourney.calendars.first!)
+            let vehicleJourneyID = vehicleJourney.id
+            
+            dateArray?.forEach { date in
+                datePickerVeehicleJourneys[date] = vehicleJourneyID
+            }
+        }
+    }
+    
+    func fetch(completion: @escaping (Response?) -> Void) {
+        
+        guard let path = Bundle.main.path(forResource: "headsign6271", ofType: "json") else {
+            print("json failed to find")
+            completion(nil)
+            return
+        }
+        let url = URL(fileURLWithPath: path)
+        do {
+                let data = try Data(contentsOf: url)
+                let decodedResponse = try JSONDecoder().decode(Response.self, from: data)
+            DispatchQueue.main.async {
+                        completion(decodedResponse)
+                    }
+            } catch {
+            print("json convert failed in JSONDecoder : \(error)")
+                completion(nil)
+        }
+    }
+    
+    func fetchTicketList() {
+        fetch { [weak self] (vehicleJourney) in
+            self?.vehicleJourneys = vehicleJourney?.vehicleJourneys ?? []
+        }
+    }
         
         func fetchHeadsignAddTicket(headsign: String) async {
             let urlString = "https://api.navitia.io/v1/coverage/fr-se/physical_modes/physical_mode%3ATrain/vehicle_journeys//?headsign=\(headsign)&"
@@ -31,14 +76,23 @@ class AddTicketViewModel: ObservableObject {
             
             do {
                 let (data, _) = try await URLSession.shared.data(for: request)
-                let decodedResponse = try JSONDecoder().decode(VehiculeJourneys.self, from: data)
-                self.vehicleJourneys = decodedResponse.vehicleJourneys
+                
+                do {
+                    let decodedResponse = try JSONDecoder().decode(VehiculeJourneys.self, from: data)
+                    DispatchQueue.main.async {
+                        self.vehicleJourneys = decodedResponse.vehicleJourneys
+                    }
+                    } catch {
+                        print("Error JSONDecoder: \(error)")
+                    }
+
+
             } catch {
                 print("Error: \(error)")
             }
         }
     
-    public func convertCalendarToDDMMYY(calendar: Calendar) -> [String]? {
+    public func convertCalendarToDDMMYY(calendar: Calendar) -> [Date]? {
         guard let activePeriod = calendar.activePeriods.first else {
             return nil // Aucune période active
         }
@@ -55,7 +109,7 @@ class AddTicketViewModel: ObservableObject {
         }
         
         var currentDate = startDate
-        var formattedDates : [String] = []
+        var formattedDates : [Date] = []
         
         let calendar = foundationCalendar.current
         
@@ -64,19 +118,19 @@ class AddTicketViewModel: ObservableObject {
             
             switch dayOfWeek {
             case 1 where calendar.weekdaySymbols[dayOfWeek - 1] == (weekDaysPattern.sunday ? "Sunday" : "prout") :
-                formattedDates.append(formatDate(currentDate))
+                formattedDates.append((currentDate))
             case 2 where calendar.weekdaySymbols[dayOfWeek - 1] == (weekDaysPattern.monday ? "Monday" : "prout") :
-                formattedDates.append(formatDate(currentDate))
+                formattedDates.append((currentDate))
             case 3 where calendar.weekdaySymbols[dayOfWeek - 1] == (weekDaysPattern.tuesday ? "Tuesday" : "prout") :
-                formattedDates.append(formatDate(currentDate))
+                formattedDates.append((currentDate))
             case 4 where calendar.weekdaySymbols[dayOfWeek - 1] == (weekDaysPattern.wednesday ? "Wednesday" : "prout") :
-                formattedDates.append(formatDate(currentDate))
+                formattedDates.append((currentDate))
             case 5 where calendar.weekdaySymbols[dayOfWeek - 1] == (weekDaysPattern.thursday ? "Thursday" : "prout") :
-                formattedDates.append(formatDate(currentDate))
+                formattedDates.append((currentDate))
             case 6 where calendar.weekdaySymbols[dayOfWeek - 1] == (weekDaysPattern.friday ? "Friday" : "prout") :
-                formattedDates.append(formatDate(currentDate))
+                formattedDates.append((currentDate))
             case 7 where calendar.weekdaySymbols[dayOfWeek - 1] == (weekDaysPattern.saturday ? "Saturday" : "prout") :
-                formattedDates.append(formatDate(currentDate))
+                formattedDates.append((currentDate))
             default:
                 break
             }
