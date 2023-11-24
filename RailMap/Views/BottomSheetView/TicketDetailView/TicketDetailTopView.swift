@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TicketDetailTopView: View {
     
-    let ticketInfo: TicketInfo
+ //   let ticketInfo: TicketInfo
     
     var body: some View {
         HStack {

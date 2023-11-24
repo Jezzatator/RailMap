@@ -11,14 +11,14 @@ import SwiftUI
 struct RailMapApp: App {
     
     @StateObject private var dataController = DataController()
-    @StateObject private var addTicketInfo = AddTicketInfo()
+   // @StateObject private var addTicketInfo = AddTicketInfo()
 
 
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
-                .environmentObject(addTicketInfo)
+//                .environmentObject(addTicketInfo)
 
         }
     }

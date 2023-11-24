@@ -9,16 +9,23 @@ import Foundation
 import SwiftUI
 
 class AddTicketViewModel: ObservableObject {
+    @Environment(\.managedObjectContext) var moc
     
+    @FetchRequest(sortDescriptors: []) var journey: FetchedResults<Journey>
+    @FetchRequest(sortDescriptors: []) var stop: FetchedResults<Stop>
+    @FetchRequest(sortDescriptors: []) var stopInfo: FetchedResults<StopInfo>
+
+
     typealias foundationCalendar = Foundation.Calendar
 
         
     @Published var vehicleJourneys = [VehicleJourney]() {
         didSet {
+            //Quand 
             updateDatePickerVehiculeJourney()
-            print(datePickerVeehicleJourneys)
         }
     }
+    
     @Published var datePickerVeehicleJourneys: [Date: String] = [:]
     
     
@@ -31,32 +38,6 @@ class AddTicketViewModel: ObservableObject {
             dateArray?.forEach { date in
                 datePickerVeehicleJourneys[date] = vehicleJourneyID
             }
-        }
-    }
-    
-    func fetch(completion: @escaping (Response?) -> Void) {
-        
-        guard let path = Bundle.main.path(forResource: "headsign6271", ofType: "json") else {
-            print("json failed to find")
-            completion(nil)
-            return
-        }
-        let url = URL(fileURLWithPath: path)
-        do {
-                let data = try Data(contentsOf: url)
-                let decodedResponse = try JSONDecoder().decode(Response.self, from: data)
-            DispatchQueue.main.async {
-                        completion(decodedResponse)
-                    }
-            } catch {
-            print("json convert failed in JSONDecoder : \(error)")
-                completion(nil)
-        }
-    }
-    
-    func fetchTicketList() {
-        fetch { [weak self] (vehicleJourney) in
-            self?.vehicleJourneys = vehicleJourney?.vehicleJourneys ?? []
         }
     }
         
@@ -195,6 +176,7 @@ class AddTicketViewModel: ObservableObject {
         }
         return "Erreur, mauvais format de date"
     }
+
     
 }
 

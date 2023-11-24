@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TicketDetailMainView: View {
     
-    let ticketInfo: TicketInfo
+ //   let ticketInfo: TicketInfo
         
     var body: some View {
         VStack(spacing: 16.0) {
