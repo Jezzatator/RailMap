@@ -20,11 +20,7 @@
 		863D04312AAB4D5E00632672 /* TicketListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D042E2AAB4D5E00632672 /* TicketListRowView.swift */; };
 		863D04322AAB4D5E00632672 /* TicketListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D042F2AAB4D5E00632672 /* TicketListView.swift */; };
 		863D04332AAB4D5E00632672 /* TicketListFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D04302AAB4D5E00632672 /* TicketListFooterView.swift */; };
-		863D04372AAB4D7D00632672 /* TicketInfoMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D04352AAB4D7D00632672 /* TicketInfoMock.swift */; };
-		863D04382AAB4D7D00632672 /* TicketList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D04362AAB4D7D00632672 /* TicketList.swift */; };
 		863D043A2AAB4D9800632672 /* TicketListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D04392AAB4D9800632672 /* TicketListViewModel.swift */; };
-		863D043E2AAB4DAC00632672 /* TicketList.json in Resources */ = {isa = PBXBuildFile; fileRef = 863D043C2AAB4DAC00632672 /* TicketList.json */; };
-		863D043F2AAB4DAC00632672 /* TicketListFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D043D2AAB4DAC00632672 /* TicketListFetcher.swift */; };
 		863D04442AAB4DE900632672 /* TicketDetailTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D04412AAB4DE900632672 /* TicketDetailTopView.swift */; };
 		863D04452AAB4DE900632672 /* TicketDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D04422AAB4DE900632672 /* TicketDetailView.swift */; };
 		863D04462AAB4DE900632672 /* TicketDetailMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D04432AAB4DE900632672 /* TicketDetailMainView.swift */; };
@@ -35,9 +31,12 @@
 		868AC91F2AB446F9002DA720 /* Section2SubtitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AC91E2AB446F9002DA720 /* Section2SubtitleView.swift */; };
 		868AC9212AB4489E002DA720 /* listStopPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AC9202AB4489E002DA720 /* listStopPointView.swift */; };
 		868AC9242AB482D4002DA720 /* AddTicketInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AC9232AB482D4002DA720 /* AddTicketInfo.swift */; };
-		86959A622ABD75F80028F7AE /* headsign6271.json in Resources */ = {isa = PBXBuildFile; fileRef = 86959A612ABD75F80028F7AE /* headsign6271.json */; };
 		869821A12AB1EE6E0014BDC2 /* AddTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869821A02AB1EE6E0014BDC2 /* AddTicketView.swift */; };
-		869821A32AB1F5C40014BDC2 /* TicketInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869821A22AB1F5C40014BDC2 /* TicketInfo.swift */; };
+		86E467E62B0F69E400487567 /* NewJourneyVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E467E52B0F69E400487567 /* NewJourneyVM.swift */; };
+		86E467E72B0FA4E000487567 /* NewJourneyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B775352AC45B540033B574 /* NewJourneyModel.swift */; };
+		86E467E82B0FA4E400487567 /* StopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86242D072AC4752D0010EA05 /* StopModel.swift */; };
+		86E467E92B0FA4E700487567 /* StopInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86242D0A2AC479690010EA05 /* StopInfoModel.swift */; };
+		86E467EB2B10B46400487567 /* TicketListRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E467EA2B10B46400487567 /* TicketListRowViewModel.swift */; };
 		86F87B632AA35E8D00F7B710 /* RailMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F87B622AA35E8D00F7B710 /* RailMapApp.swift */; };
 		86F87B652AA35E8D00F7B710 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F87B642AA35E8D00F7B710 /* ContentView.swift */; };
 		86F87B672AA35E8D00F7B710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86F87B662AA35E8D00F7B710 /* Assets.xcassets */; };
@@ -74,11 +73,7 @@
 		863D042E2AAB4D5E00632672 /* TicketListRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketListRowView.swift; sourceTree = "<group>"; };
 		863D042F2AAB4D5E00632672 /* TicketListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketListView.swift; sourceTree = "<group>"; };
 		863D04302AAB4D5E00632672 /* TicketListFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketListFooterView.swift; sourceTree = "<group>"; };
-		863D04352AAB4D7D00632672 /* TicketInfoMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketInfoMock.swift; sourceTree = "<group>"; };
-		863D04362AAB4D7D00632672 /* TicketList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketList.swift; sourceTree = "<group>"; };
 		863D04392AAB4D9800632672 /* TicketListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketListViewModel.swift; sourceTree = "<group>"; };
-		863D043C2AAB4DAC00632672 /* TicketList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TicketList.json; sourceTree = "<group>"; };
-		863D043D2AAB4DAC00632672 /* TicketListFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketListFetcher.swift; sourceTree = "<group>"; };
 		863D04412AAB4DE900632672 /* TicketDetailTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketDetailTopView.swift; sourceTree = "<group>"; };
 		863D04422AAB4DE900632672 /* TicketDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketDetailView.swift; sourceTree = "<group>"; };
 		863D04432AAB4DE900632672 /* TicketDetailMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketDetailMainView.swift; sourceTree = "<group>"; };
@@ -90,10 +85,10 @@
 		868AC91E2AB446F9002DA720 /* Section2SubtitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section2SubtitleView.swift; sourceTree = "<group>"; };
 		868AC9202AB4489E002DA720 /* listStopPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listStopPointView.swift; sourceTree = "<group>"; };
 		868AC9232AB482D4002DA720 /* AddTicketInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTicketInfo.swift; sourceTree = "<group>"; };
-		86959A612ABD75F80028F7AE /* headsign6271.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = headsign6271.json; sourceTree = "<group>"; };
 		869821A02AB1EE6E0014BDC2 /* AddTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTicketView.swift; sourceTree = "<group>"; };
-		869821A22AB1F5C40014BDC2 /* TicketInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketInfo.swift; sourceTree = "<group>"; };
-		86B775352AC45B540033B574 /* JourneyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyModel.swift; sourceTree = "<group>"; };
+		86B775352AC45B540033B574 /* NewJourneyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJourneyModel.swift; sourceTree = "<group>"; };
+		86E467E52B0F69E400487567 /* NewJourneyVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJourneyVM.swift; sourceTree = "<group>"; };
+		86E467EA2B10B46400487567 /* TicketListRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TicketListRowViewModel.swift; path = "RailMap/View Models/TicketListRowViewModel.swift"; sourceTree = "<group>"; };
 		86F87B5F2AA35E8D00F7B710 /* RailMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RailMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86F87B622AA35E8D00F7B710 /* RailMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailMapApp.swift; sourceTree = "<group>"; };
 		86F87B642AA35E8D00F7B710 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -122,21 +117,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		86242D092AC479520010EA05 /* Journey */ = {
+		86242D092AC479520010EA05 /* NewJourney */ = {
 			isa = PBXGroup;
 			children = (
-				86B775352AC45B540033B574 /* JourneyModel.swift */,
+				86B775352AC45B540033B574 /* NewJourneyModel.swift */,
 				86242D072AC4752D0010EA05 /* StopModel.swift */,
 				86242D0A2AC479690010EA05 /* StopInfoModel.swift */,
 			);
-			path = Journey;
+			path = NewJourney;
 			sourceTree = "<group>";
 		};
 		863D040E2AAB20C100632672 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				86E467E22B0CABBA00487567 /* Date */,
-				86242D092AC479520010EA05 /* Journey */,
+				86242D092AC479520010EA05 /* NewJourney */,
 				863D04342AAB4D6D00632672 /* Tickets */,
 			);
 			path = Models;
@@ -159,6 +154,7 @@
 			children = (
 				868AC9162AB34744002DA720 /* AddTicketVM */,
 				863D04392AAB4D9800632672 /* TicketListViewModel.swift */,
+				86E467E52B0F69E400487567 /* NewJourneyVM.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -249,21 +245,8 @@
 			isa = PBXGroup;
 			children = (
 				868AC9222AB482B3002DA720 /* AddTicket */,
-				863D04352AAB4D7D00632672 /* TicketInfoMock.swift */,
-				863D04362AAB4D7D00632672 /* TicketList.swift */,
-				869821A22AB1F5C40014BDC2 /* TicketInfo.swift */,
 			);
 			path = Tickets;
-			sourceTree = "<group>";
-		};
-		863D043B2AAB4D9F00632672 /* MockData */ = {
-			isa = PBXGroup;
-			children = (
-				863D043C2AAB4DAC00632672 /* TicketList.json */,
-				86959A612ABD75F80028F7AE /* headsign6271.json */,
-				863D043D2AAB4DAC00632672 /* TicketListFetcher.swift */,
-			);
-			path = MockData;
 			sourceTree = "<group>";
 		};
 		863D04402AAB4DD900632672 /* TicketDetailView */ = {
@@ -321,6 +304,7 @@
 		86F87B562AA35E8C00F7B710 = {
 			isa = PBXGroup;
 			children = (
+				86E467EA2B10B46400487567 /* TicketListRowViewModel.swift */,
 				86F87B612AA35E8D00F7B710 /* RailMap */,
 				86FD8F672AB9CDE4006D113C /* RailMapTests */,
 				86F87B602AA35E8D00F7B710 /* Products */,
@@ -346,7 +330,6 @@
 				863D040F2AAB20C700632672 /* Views */,
 				863D04102AAB20CD00632672 /* View Models */,
 				863D040E2AAB20C100632672 /* Models */,
-				863D043B2AAB4D9F00632672 /* MockData */,
 				863D04112AAB20D300632672 /* Utilities */,
 				86F87B662AA35E8D00F7B710 /* Assets.xcassets */,
 				86F87B682AA35E8D00F7B710 /* Preview Content */,
@@ -452,10 +435,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86959A622ABD75F80028F7AE /* headsign6271.json in Resources */,
 				86F87B6A2AA35E8D00F7B710 /* Preview Assets.xcassets in Resources */,
 				86F87B672AA35E8D00F7B710 /* Assets.xcassets in Resources */,
-				863D043E2AAB4DAC00632672 /* TicketList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,31 +457,32 @@
 				868AC91C2AB44127002DA720 /* Section1AddTicketView.swift in Sources */,
 				868AC9212AB4489E002DA720 /* listStopPointView.swift in Sources */,
 				863D043A2AAB4D9800632672 /* TicketListViewModel.swift in Sources */,
-				869821A32AB1F5C40014BDC2 /* TicketInfo.swift in Sources */,
 				863D042C2AAB4D3300632672 /* RoundedCorner.swift in Sources */,
 				8671CBB42B076ED300042F30 /* RailMap.xcdatamodeld in Sources */,
+				86E467E62B0F69E400487567 /* NewJourneyVM.swift in Sources */,
 				863D04202AAB437800632672 /* MapView.swift in Sources */,
 				8671CBB62B076F2E00042F30 /* DataController.swift in Sources */,
-				863D043F2AAB4DAC00632672 /* TicketListFetcher.swift in Sources */,
 				863D04232AAB46B500632672 /* BottomSheetView.swift in Sources */,
 				863D04452AAB4DE900632672 /* TicketDetailView.swift in Sources */,
 				863D042B2AAB4D3300632672 /* BlockView.swift in Sources */,
+				86E467E72B0FA4E000487567 /* NewJourneyModel.swift in Sources */,
 				863D04152AAB253500632672 /* VehiculeJourneysModel.swift in Sources */,
 				863D04332AAB4D5E00632672 /* TicketListFooterView.swift in Sources */,
+				86E467E92B0FA4E700487567 /* StopInfoModel.swift in Sources */,
 				868AC9242AB482D4002DA720 /* AddTicketInfo.swift in Sources */,
 				868AC9182AB34759002DA720 /* AddTicketViewModel.swift in Sources */,
 				86F87B652AA35E8D00F7B710 /* ContentView.swift in Sources */,
 				868AC91F2AB446F9002DA720 /* Section2SubtitleView.swift in Sources */,
 				869821A12AB1EE6E0014BDC2 /* AddTicketView.swift in Sources */,
+				86E467E82B0FA4E400487567 /* StopModel.swift in Sources */,
 				863D04292AAB4D3300632672 /* LineShape.swift in Sources */,
 				863D04312AAB4D5E00632672 /* TicketListRowView.swift in Sources */,
 				863D041D2AAB2A7D00632672 /* ApiService.swift in Sources */,
 				863D041B2AAB29AD00632672 /* ApiServiceProtocole.swift in Sources */,
 				863D04462AAB4DE900632672 /* TicketDetailMainView.swift in Sources */,
 				863D04442AAB4DE900632672 /* TicketDetailTopView.swift in Sources */,
-				863D04372AAB4D7D00632672 /* TicketInfoMock.swift in Sources */,
+				86E467EB2B10B46400487567 /* TicketListRowViewModel.swift in Sources */,
 				863D04192AAB25DE00632672 /* NavitiaEndpoint.swift in Sources */,
-				863D04382AAB4D7D00632672 /* TicketList.swift in Sources */,
 				863D042A2AAB4D3300632672 /* LREdgeCutShapeView.swift in Sources */,
 				863D04322AAB4D5E00632672 /* TicketListView.swift in Sources */,
 				86F87B632AA35E8D00F7B710 /* RailMapApp.swift in Sources */,

@@ -43,18 +43,22 @@ struct BottomSheetViewLarge: View {
                 }
                 .padding(.horizontal, 15)
                     List {
-                        Section {
-                            ForEach(viewModel.ticketList.indices, id: \.self) { index in
-                                NavigationLink(destination: TicketDetailView(ticketInfo: viewModel.ticketList[index])) {
-                                    TicketListRowView(ticketInfo: viewModel.ticketList[index])
+                        
+                        if journeys.isEmpty {
+                            
+                            Text("No journeys found")
+                            
+                        } else {
+                            Section {
+                                TicketListRowView()
+                                .onTapGesture {
+                                    sheetSize = .large
                                 }
+                            } footer: {
+                                TicketListFooterView()
                             }
-                            .onTapGesture {
-                                sheetSize = .large
-                            }
-                        } footer: {
-                            TicketListFooterView()
                         }
+                        
                     }
                     .listStyle(PlainListStyle())
                 .onAppear {

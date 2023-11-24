@@ -10,7 +10,7 @@ import SwiftUI
 struct Section1AddTicketView: View {
        
     @StateObject var viewModel: AddTicketViewModel
-    @EnvironmentObject var addTicketInfoVM: AddTicketInfo
+ //   @EnvironmentObject var addTicketInfoVM: AddTicketInfo
     
     @Binding var trainNum: String
     

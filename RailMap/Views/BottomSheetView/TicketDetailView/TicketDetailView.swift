@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TicketDetailView: View {
     
-    let ticketInfo: TicketInfo
+ //   let ticketInfo: TicketInfo
     @State private var isShowModal = false
     
     var body: some View {

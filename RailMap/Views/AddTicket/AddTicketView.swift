@@ -11,16 +11,18 @@ import SwiftUI
 struct AddTicket: View {
     
     @StateObject var viewModel = AddTicketViewModel()
-    @EnvironmentObject var addTicketInfoVM: AddTicketInfo
+    @EnvironmentObject var newJourneyVM: NewJourneyVM
     
     @Environment(\.dismiss) var dismiss
     @Environment(\.managedObjectContext) var moc
     
+    @FetchRequest(sortDescriptors: []) var journey: FetchedResults<Journey>
+    
    // @State private var newJourney = Journey()
     
     @State var trainNum = ""
-    @State var selectedDay = ""
-    @State var Date = "12 Septembre"
+    @State var selectedDay: Date?
+    @State var Date: Date?
     @State var Hour = "15:10"
     @State var StopPoints = ["Paris Gare de Lyon", "Valence TGV Rhone Alpes Sud", "Nimes Pont du Gard", "Montpellier Sud de France", "Sete", "Agde", "Bezier", "Narbonne", "Perpignan"]
     
@@ -63,11 +65,13 @@ struct AddTicket: View {
                                         
                                             Text(viewModel.formatDate(date))
                                     
-                                    }.onChange(of: selectedDay) {
-                                        addTicketInfoVM.addTicketInfo[0].date = viewModel.formatDateLettre(selectedDay)
                                     }
-                                }
-                            } else {
+//                                    .onChange(of: selectedDay) {
+//                                        addTicketInfoVM.addTicketInfo[0].date = selectedDay
+//                                        addTicketInfoVM.addTicketInfo[0].idVehicule = viewModel.datePickerVeehicleJourneys[selectedDay!] ?? "N/A"
+//                                        }
+                                    }
+                        } else {
                                 Text("Date")
                                     .foregroundColor(.gray)
                             }
@@ -79,10 +83,10 @@ struct AddTicket: View {
                     
                     //Section 3: Verification
                     
-                    TicketListRowView(ticketInfo: addTicketInfoVM.addTicketInfo[0])
-                        .frame(height: 80.0)
-                        .padding(.horizontal)
-                        .previewLayout(PreviewLayout.sizeThatFits)
+//                    TicketListRowView(ticketInfo: addTicketInfoVM.addTicketInfo[0])
+//                        .frame(height: 80.0)
+//                        .padding(.horizontal)
+//                        .previewLayout(PreviewLayout.sizeThatFits)
                     
                     //Seciton 4: Bouton enregistrer
                     
@@ -93,6 +97,21 @@ struct AddTicket: View {
                                 // init transfer données sur fetch sur class billet
                                 //.disable a ajouter pour pas enregistrer des voyages avec des infos incompletes
                                 //et donc créer une class intermediaire qui check les infos choisies puis lors de l'enregistrement transfer tout a une class ticket avec le reste des infos completes et cachée (tout les stop points, GEOJSON, etc)
+                                
+                                let newJourney = Journey(context: moc)
+                                newJourney.archived = false
+//                                newJourney.headsign = trainNum
+//                                newJourney.stops.
+                                
+                                if moc.hasChanges {
+                                    do {
+                                        try moc.save()
+                                    } catch {
+                                        print(error.localizedDescription)
+                                    }
+                                } else {
+//                                    print(error.localizedDescription)
+                                }
                                 withAnimation {
                                     //context.insert(newJourney)
                                 }
@@ -110,7 +129,7 @@ struct AddTicket: View {
                     .navigationTitle("Add a journey")
                     .toolbar {
                         Button(action: {
-                            addTicketInfoVM.addTicketInfo[0] = addTicketInfoVM.resetTicketInfo
+//                            addTicketInfoVM.addTicketInfo[0] = addTicketInfoVM.resetTicketInfo
                             dismiss()}, label: {
                                 Text("Cancel")
                                     .foregroundColor(.red)
@@ -122,7 +141,7 @@ struct AddTicket: View {
     }
 }
 
-#Preview {
-    AddTicket()
-        .environmentObject(AddTicketInfo())
-}
+//#Preview {
+//    AddTicket()
+//        .environmentObject(AddTicketInfo())
+//}
