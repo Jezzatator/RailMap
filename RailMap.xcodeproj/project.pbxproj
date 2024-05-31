@@ -3,111 +3,244 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		863D04152AAB253500632672 /* VehiculeJourneysModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D04142AAB253500632672 /* VehiculeJourneysModel.swift */; };
-		863D04192AAB25DE00632672 /* NavitiaEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D04182AAB25DE00632672 /* NavitiaEndpoint.swift */; };
-		863D041B2AAB29AD00632672 /* ApiServiceProtocole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D041A2AAB29AD00632672 /* ApiServiceProtocole.swift */; };
-		863D041D2AAB2A7D00632672 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D041C2AAB2A7D00632672 /* ApiService.swift */; };
-		863D04202AAB437800632672 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D041F2AAB437800632672 /* MapView.swift */; };
-		863D04232AAB46B500632672 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D04222AAB46B500632672 /* BottomSheetView.swift */; };
-		863D04292AAB4D3300632672 /* LineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D04252AAB4D3300632672 /* LineShape.swift */; };
-		863D042A2AAB4D3300632672 /* LREdgeCutShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D04262AAB4D3300632672 /* LREdgeCutShapeView.swift */; };
-		863D042B2AAB4D3300632672 /* BlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D04272AAB4D3300632672 /* BlockView.swift */; };
-		863D042C2AAB4D3300632672 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D04282AAB4D3300632672 /* RoundedCorner.swift */; };
-		863D04312AAB4D5E00632672 /* TicketListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D042E2AAB4D5E00632672 /* TicketListRowView.swift */; };
-		863D04322AAB4D5E00632672 /* TicketListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D042F2AAB4D5E00632672 /* TicketListView.swift */; };
-		863D04332AAB4D5E00632672 /* TicketListFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D04302AAB4D5E00632672 /* TicketListFooterView.swift */; };
-		863D043A2AAB4D9800632672 /* TicketListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D04392AAB4D9800632672 /* TicketListViewModel.swift */; };
-		863D04442AAB4DE900632672 /* TicketDetailTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D04412AAB4DE900632672 /* TicketDetailTopView.swift */; };
-		863D04452AAB4DE900632672 /* TicketDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D04422AAB4DE900632672 /* TicketDetailView.swift */; };
-		863D04462AAB4DE900632672 /* TicketDetailMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D04432AAB4DE900632672 /* TicketDetailMainView.swift */; };
-		8671CBB42B076ED300042F30 /* RailMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8671CBB22B076ED300042F30 /* RailMap.xcdatamodeld */; };
-		8671CBB62B076F2E00042F30 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8671CBB52B076F2E00042F30 /* DataController.swift */; };
-		868AC9182AB34759002DA720 /* AddTicketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AC9172AB34759002DA720 /* AddTicketViewModel.swift */; };
-		868AC91C2AB44127002DA720 /* Section1AddTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AC91B2AB44127002DA720 /* Section1AddTicketView.swift */; };
-		868AC91F2AB446F9002DA720 /* Section2SubtitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AC91E2AB446F9002DA720 /* Section2SubtitleView.swift */; };
-		868AC9212AB4489E002DA720 /* listStopPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AC9202AB4489E002DA720 /* listStopPointView.swift */; };
-		868AC9242AB482D4002DA720 /* AddTicketInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AC9232AB482D4002DA720 /* AddTicketInfo.swift */; };
-		869821A12AB1EE6E0014BDC2 /* AddTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869821A02AB1EE6E0014BDC2 /* AddTicketView.swift */; };
-		86E467E62B0F69E400487567 /* NewJourneyVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E467E52B0F69E400487567 /* NewJourneyVM.swift */; };
-		86E467E72B0FA4E000487567 /* NewJourneyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B775352AC45B540033B574 /* NewJourneyModel.swift */; };
-		86E467E82B0FA4E400487567 /* StopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86242D072AC4752D0010EA05 /* StopModel.swift */; };
-		86E467E92B0FA4E700487567 /* StopInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86242D0A2AC479690010EA05 /* StopInfoModel.swift */; };
-		86E467EB2B10B46400487567 /* TicketListRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E467EA2B10B46400487567 /* TicketListRowViewModel.swift */; };
-		86F87B632AA35E8D00F7B710 /* RailMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F87B622AA35E8D00F7B710 /* RailMapApp.swift */; };
-		86F87B652AA35E8D00F7B710 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F87B642AA35E8D00F7B710 /* ContentView.swift */; };
-		86F87B672AA35E8D00F7B710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86F87B662AA35E8D00F7B710 /* Assets.xcassets */; };
-		86F87B6A2AA35E8D00F7B710 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86F87B692AA35E8D00F7B710 /* Preview Assets.xcassets */; };
-		86FD8F692AB9CDE4006D113C /* RailMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FD8F682AB9CDE4006D113C /* RailMapTests.swift */; };
-		86FD8F702AB9CE2D006D113C /* AddTicketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FD8F6F2AB9CE2D006D113C /* AddTicketTests.swift */; };
-		86FD8F712AB9D40B006D113C /* VehiculeJourneysModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863D04142AAB253500632672 /* VehiculeJourneysModel.swift */; };
-		86FD8F722AB9D412006D113C /* AddTicketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868AC9172AB34759002DA720 /* AddTicketViewModel.swift */; };
+		0295B7C4CBBC28BAC4119A43 /* ContentView.swift in Resources */ = {isa = PBXBuildFile; fileRef = C10B403B53E52550B718A6C0 /* ContentView.swift */; };
+		03D8F41FDE5EE727EB56C56D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10B403B53E52550B718A6C0 /* ContentView.swift */; };
+		054BA6F70B2B1D14FDC0C8A4 /* AddTicketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47328AD3164ECDC469768A20 /* AddTicketViewModel.swift */; };
+		0570646292424B1C45687A8E /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76571B2B1D2F57B7F0731E2 /* ApiService.swift */; };
+		061EBF80D377255879B1778A /* TicketDetailMainView.swift in Resources */ = {isa = PBXBuildFile; fileRef = F168BD6266D52FBA7AF41C60 /* TicketDetailMainView.swift */; };
+		0933E1163025FC0434CB44FD /* TicketListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4D7520AA839B9D241D1695 /* TicketListViewModel.swift */; };
+		09CF9267620C3DFDD71C52FF /* TicketListRowViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595B28AFE794E0B3E7A0F656 /* TicketListRowViewModelTests.swift */; };
+		1054EEF1EA6B9F663123EF18 /* BlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA80025001E7A1D8137B5FD5 /* BlockView.swift */; };
+		118C2F46ABA216D0A52268EA /* TuistBundle+RailMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF9598F9176C5337F3F8E0A /* TuistBundle+RailMapTests.swift */; };
+		1394B9C3FBE69F57723FBC31 /* BottomSheetView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 32B5307C46773DAA84D294D9 /* BottomSheetView.swift */; };
+		146826575147BE94392546E7 /* Section2SubtitleView.swift in Resources */ = {isa = PBXBuildFile; fileRef = A8DD0C745F9CEAA9D82BA20C /* Section2SubtitleView.swift */; };
+		17D1512CF365C5584C3C9ED9 /* TicketListRowViewModel.swift in Resources */ = {isa = PBXBuildFile; fileRef = 4335E131661A6BF248463776 /* TicketListRowViewModel.swift */; };
+		1B0B6942318BF62EB12500CB /* StopModel.swift in Resources */ = {isa = PBXBuildFile; fileRef = BD4292113CF9231D35B16339 /* StopModel.swift */; };
+		1C82C75FD691F360292CAC31 /* NewJourneyVM.swift in Resources */ = {isa = PBXBuildFile; fileRef = D4CBDDE5C1134ACE4E6DAC0A /* NewJourneyVM.swift */; };
+		1C8317A89AD870340F6CEBA4 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B5B531B7D988D2145AD207 /* DataController.swift */; };
+		1CE926B771689765C051F2EC /* TicketDetailTopView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 3FF1EA0E07E1F2AD41481ED6 /* TicketDetailTopView.swift */; };
+		1D0466BB7FACC22F5DFA86FB /* RailMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF415039E72016E09CE62DE1 /* RailMap.xcdatamodeld */; };
+		1D84ABC079B2335477E48DA1 /* BottomSheetView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 32B5307C46773DAA84D294D9 /* BottomSheetView.swift */; };
+		1FD0B998DF22636B0DA6C276 /* VehiculeJourneysModel.swift in Resources */ = {isa = PBXBuildFile; fileRef = 49CC52885A40B04D9041E702 /* VehiculeJourneysModel.swift */; };
+		20D634C05FC19920810CD7C1 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B5307C46773DAA84D294D9 /* BottomSheetView.swift */; };
+		2398C0EDDF0E196B082E6823 /* AddTicketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47328AD3164ECDC469768A20 /* AddTicketViewModel.swift */; };
+		25070095D213B1D56F1A64EA /* TicketDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7EEA9D30E8B7F5CE017BAF /* TicketDetailView.swift */; };
+		25CD4DA81BFFA9C989F3BBB2 /* listStopPointView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 8C7097C655C4C0BCC8D1A227 /* listStopPointView.swift */; };
+		26AE617EE2C311C7460C07AF /* NavitiaEndpoint.swift in Resources */ = {isa = PBXBuildFile; fileRef = 39E558EBAEF30FEFED284476 /* NavitiaEndpoint.swift */; };
+		2964DF6C4A4E2CBD4C96AF1B /* TicketListFooterView.swift in Resources */ = {isa = PBXBuildFile; fileRef = EBA83BB8E06C342B53A699B5 /* TicketListFooterView.swift */; };
+		2A52DA6E5962F9701C48B1BD /* RoundedCorner.swift in Resources */ = {isa = PBXBuildFile; fileRef = B810908715F246575B15021D /* RoundedCorner.swift */; };
+		2BDD7AE41BFFA6FDB4B8BDBD /* StopInfoModel.swift in Resources */ = {isa = PBXBuildFile; fileRef = 7BAC6307C581F9E33A123BC5 /* StopInfoModel.swift */; };
+		30396F861B7DF5EC593FE6F2 /* Section1AddTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D180C677860766F1801D0A83 /* Section1AddTicketView.swift */; };
+		303D926AF68E89FA629393AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10B403B53E52550B718A6C0 /* ContentView.swift */; };
+		3056BAD9A4684E90A0D06910 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A522EB05B114BD6FA4EBE8 /* Preview Assets.xcassets */; };
+		312B7409442BD34AFFBD75BC /* NewJourneyModel.swift in Resources */ = {isa = PBXBuildFile; fileRef = 292505E1B09E9A3032B44EA1 /* NewJourneyModel.swift */; };
+		365CBE12F53805BBDCA330A6 /* AddTicketViewModel.swift in Resources */ = {isa = PBXBuildFile; fileRef = 47328AD3164ECDC469768A20 /* AddTicketViewModel.swift */; };
+		390387DCBAD41F7670C08BF8 /* NavitiaEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E558EBAEF30FEFED284476 /* NavitiaEndpoint.swift */; };
+		3A4077403352101C716E2992 /* BlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA80025001E7A1D8137B5FD5 /* BlockView.swift */; };
+		3AA33FEF8981F062B3901BC0 /* DataController.swift in Resources */ = {isa = PBXBuildFile; fileRef = 71B5B531B7D988D2145AD207 /* DataController.swift */; };
+		3D62024778D25602F316B3BC /* LREdgeCutShapeView.swift in Resources */ = {isa = PBXBuildFile; fileRef = D4102A353AD1AAF3B3FBF585 /* LREdgeCutShapeView.swift */; };
+		3D8E0122B957D64E01D5757C /* StopModel.swift in Resources */ = {isa = PBXBuildFile; fileRef = BD4292113CF9231D35B16339 /* StopModel.swift */; };
+		4113DF4C76FF583CCAAB4B7F /* MapView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 4238995F5D0B8D5B51EF8284 /* MapView.swift */; };
+		423F322AB4F454CE816D4CDB /* AddTicketView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 41FBCAFC98F3F5D1EFF16056 /* AddTicketView.swift */; };
+		42B2B0B276F02484764178E4 /* RailMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF415039E72016E09CE62DE1 /* RailMap.xcdatamodeld */; };
+		44DC60B7D755118BA7E1B1CD /* TicketDetailView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 5D7EEA9D30E8B7F5CE017BAF /* TicketDetailView.swift */; };
+		4582ABC3CB380F26C379C55A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4238995F5D0B8D5B51EF8284 /* MapView.swift */; };
+		468E82336A97E33A85449BB3 /* TicketListRowViewModelTests.swift in Resources */ = {isa = PBXBuildFile; fileRef = 595B28AFE794E0B3E7A0F656 /* TicketListRowViewModelTests.swift */; };
+		47165939BED5C3D1437C05F1 /* ContentView.swift in Resources */ = {isa = PBXBuildFile; fileRef = C10B403B53E52550B718A6C0 /* ContentView.swift */; };
+		482DF377D439433D265276E6 /* TicketListRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4335E131661A6BF248463776 /* TicketListRowViewModel.swift */; };
+		485E99B10EEFD129AC16D5FF /* Section1AddTicketView.swift in Resources */ = {isa = PBXBuildFile; fileRef = D180C677860766F1801D0A83 /* Section1AddTicketView.swift */; };
+		4BA8D9A9B7BF4EA0C4AE612E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4238995F5D0B8D5B51EF8284 /* MapView.swift */; };
+		4DC4095EC8BF4E70A4E50AB2 /* ApiServiceProtocole.swift in Resources */ = {isa = PBXBuildFile; fileRef = C7CF7CB1D7C2F93A4EAFBC55 /* ApiServiceProtocole.swift */; };
+		4E07F94DDDE8ED51BC5F1880 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B5307C46773DAA84D294D9 /* BottomSheetView.swift */; };
+		4F0EB301A58F6EEFB9772A49 /* listStopPointView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 8C7097C655C4C0BCC8D1A227 /* listStopPointView.swift */; };
+		52C3AD120F8A2D1721F5ABF4 /* listStopPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7097C655C4C0BCC8D1A227 /* listStopPointView.swift */; };
+		52ED85C340FF957CC990D079 /* TicketDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7EEA9D30E8B7F5CE017BAF /* TicketDetailView.swift */; };
+		559B693A6AD0EEF5A1ADC6B7 /* TicketListRowView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 069217BF1FD51965BC5EE96E /* TicketListRowView.swift */; };
+		5838840284D75B1D73215BDD /* NavitiaEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E558EBAEF30FEFED284476 /* NavitiaEndpoint.swift */; };
+		5FC1388F3C7FB53EF2A2420E /* TicketListRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4335E131661A6BF248463776 /* TicketListRowViewModel.swift */; };
+		6045B4DA19149213EB41221E /* LineShape.swift in Resources */ = {isa = PBXBuildFile; fileRef = 965C39C02110E17B70F9C9A5 /* LineShape.swift */; };
+		60B6D5AE2B7AD34BFA6BD5A2 /* VehiculeJourneysModel.swift in Resources */ = {isa = PBXBuildFile; fileRef = 49CC52885A40B04D9041E702 /* VehiculeJourneysModel.swift */; };
+		61DC2B5FF38D1E51FB334EF8 /* DataController.swift in Resources */ = {isa = PBXBuildFile; fileRef = 71B5B531B7D988D2145AD207 /* DataController.swift */; };
+		626C1D7B81BC4C6D00F813E7 /* TuistAssets+RailMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01C27C592C5DCD6A845E64B /* TuistAssets+RailMap.swift */; };
+		63802929837C03CF2DE2CEB4 /* StopInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAC6307C581F9E33A123BC5 /* StopInfoModel.swift */; };
+		64C2637F3297FCB0F9CDFAFA /* LineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965C39C02110E17B70F9C9A5 /* LineShape.swift */; };
+		6730423E71B57E01B5ECCBB4 /* VehiculeJourneysModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CC52885A40B04D9041E702 /* VehiculeJourneysModel.swift */; };
+		67A7FDD8CF232852471EECB5 /* NewJourneyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292505E1B09E9A3032B44EA1 /* NewJourneyModel.swift */; };
+		6A98A32FD8780C216142EA20 /* ApiServiceProtocole.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF7CB1D7C2F93A4EAFBC55 /* ApiServiceProtocole.swift */; };
+		6B7254D20331FD9D90896344 /* TicketDetailView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 5D7EEA9D30E8B7F5CE017BAF /* TicketDetailView.swift */; };
+		6B90FECF3D3ACF610183B0B0 /* TicketListRowViewModel.swift in Resources */ = {isa = PBXBuildFile; fileRef = 4335E131661A6BF248463776 /* TicketListRowViewModel.swift */; };
+		6BACCDC1F338D1C4B3929EEA /* TicketListFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA83BB8E06C342B53A699B5 /* TicketListFooterView.swift */; };
+		6D55E98FED0EFFE8253B1068 /* MapView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 4238995F5D0B8D5B51EF8284 /* MapView.swift */; };
+		6D803F17B44127A78BE48EEA /* TicketListViewModel.swift in Resources */ = {isa = PBXBuildFile; fileRef = FE4D7520AA839B9D241D1695 /* TicketListViewModel.swift */; };
+		6FD92D2615A1662D4F241381 /* BlockView.swift in Resources */ = {isa = PBXBuildFile; fileRef = AA80025001E7A1D8137B5FD5 /* BlockView.swift */; };
+		74EFA82AEF01AC3FE9E08A52 /* NavitiaEndpoint.swift in Resources */ = {isa = PBXBuildFile; fileRef = 39E558EBAEF30FEFED284476 /* NavitiaEndpoint.swift */; };
+		771696B44942EB917E767348 /* NewJourneyVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CBDDE5C1134ACE4E6DAC0A /* NewJourneyVM.swift */; };
+		7ADBA7826555548CB8EC26E2 /* TicketListView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 1C23997C2EE026E90B132B06 /* TicketListView.swift */; };
+		7BAF1D7DEEBB2031133DA369 /* LREdgeCutShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4102A353AD1AAF3B3FBF585 /* LREdgeCutShapeView.swift */; };
+		7DEFA253C6B9BF2ACB41E5CA /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B5B531B7D988D2145AD207 /* DataController.swift */; };
+		7F2D739E53B9B36C0BDCC2AD /* Section2SubtitleView.swift in Resources */ = {isa = PBXBuildFile; fileRef = A8DD0C745F9CEAA9D82BA20C /* Section2SubtitleView.swift */; };
+		8142D0D2580119AF93D43CCD /* NewJourneyVM.swift in Resources */ = {isa = PBXBuildFile; fileRef = D4CBDDE5C1134ACE4E6DAC0A /* NewJourneyVM.swift */; };
+		83893967C19B3BCAAB08B7A1 /* TicketListRowViewModelTests.swift in Resources */ = {isa = PBXBuildFile; fileRef = 595B28AFE794E0B3E7A0F656 /* TicketListRowViewModelTests.swift */; };
+		84928D1320F58E74529E9190 /* ApiServiceProtocole.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CF7CB1D7C2F93A4EAFBC55 /* ApiServiceProtocole.swift */; };
+		84A8A5E24539C82B761CC601 /* TuistBundle+RailMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB64B7D3701488AB6EA29AB2 /* TuistBundle+RailMap.swift */; };
+		8545CFD8AEB756AE4F248BDE /* StopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4292113CF9231D35B16339 /* StopModel.swift */; };
+		89953796219A9BC1C7C45BF0 /* StopInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAC6307C581F9E33A123BC5 /* StopInfoModel.swift */; };
+		89BA9A6A985603D0EABD9AD3 /* AddTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FBCAFC98F3F5D1EFF16056 /* AddTicketView.swift */; };
+		8A7656E2976690D705AF6C38 /* AddTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FBCAFC98F3F5D1EFF16056 /* AddTicketView.swift */; };
+		8F033BAF26A500F994DD8114 /* TicketListFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA83BB8E06C342B53A699B5 /* TicketListFooterView.swift */; };
+		90642050180E5F16A9A6AC83 /* LineShape.swift in Resources */ = {isa = PBXBuildFile; fileRef = 965C39C02110E17B70F9C9A5 /* LineShape.swift */; };
+		909037D10BB2EA850D87777C /* AddTicketInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9CB10F2C099F13FAA5F9C5 /* AddTicketInfo.swift */; };
+		90A84EE49A3A0CABEB0B3955 /* NewJourneyModel.swift in Resources */ = {isa = PBXBuildFile; fileRef = 292505E1B09E9A3032B44EA1 /* NewJourneyModel.swift */; };
+		90F39DC6E2EC433B43748AF7 /* TicketListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C23997C2EE026E90B132B06 /* TicketListView.swift */; };
+		929A01F3DD596B5CDD6E0073 /* TicketListRowView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 069217BF1FD51965BC5EE96E /* TicketListRowView.swift */; };
+		9447C3E8CF98D2EAF8542763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9240C2F44A85CD5CC3B7277 /* Assets.xcassets */; };
+		9528628C59D501390A1789C3 /* ApiService.swift in Resources */ = {isa = PBXBuildFile; fileRef = B76571B2B1D2F57B7F0731E2 /* ApiService.swift */; };
+		952B69BC026716916EC35FCF /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76571B2B1D2F57B7F0731E2 /* ApiService.swift */; };
+		98FC11013C0C821AFF48CFF3 /* RailMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F517F81A6F929B476866EF /* RailMapApp.swift */; };
+		993F6109BB34AD7D5F071271 /* RailMapHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = 369A4A6BEA47BB2435F623AA /* RailMapHelpers */; };
+		9B71F05EBE571541B38DF1F3 /* TicketListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4D7520AA839B9D241D1695 /* TicketListViewModel.swift */; };
+		9BC973620FF88C5797D93B64 /* TicketDetailMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F168BD6266D52FBA7AF41C60 /* TicketDetailMainView.swift */; };
+		9D2F20D9F8DF984E4ECA20A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A522EB05B114BD6FA4EBE8 /* Preview Assets.xcassets */; };
+		A09CFCD94EC5947C59672A80 /* Section2SubtitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD0C745F9CEAA9D82BA20C /* Section2SubtitleView.swift */; };
+		A0DC5DF4EE1F1AA08505F5D0 /* LREdgeCutShapeView.swift in Resources */ = {isa = PBXBuildFile; fileRef = D4102A353AD1AAF3B3FBF585 /* LREdgeCutShapeView.swift */; };
+		A39CE8B0A1D2C63D3C0774E8 /* NewJourneyVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CBDDE5C1134ACE4E6DAC0A /* NewJourneyVM.swift */; };
+		A5668DCC2B9347E687EE85DF /* BlockView.swift in Resources */ = {isa = PBXBuildFile; fileRef = AA80025001E7A1D8137B5FD5 /* BlockView.swift */; };
+		A5DA165ED3820D7B35E52539 /* Section1AddTicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D180C677860766F1801D0A83 /* Section1AddTicketView.swift */; };
+		AA5533AFB44C9160DFA23546 /* Section2SubtitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DD0C745F9CEAA9D82BA20C /* Section2SubtitleView.swift */; };
+		AB4B1EEB0DCAE3470A4F825F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696714B6A0375335AEFCD015 /* Launch Screen.storyboard */; };
+		AD0BB21F6B43BE3D73C9BB18 /* RailMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F517F81A6F929B476866EF /* RailMapApp.swift */; };
+		AD46B4D8358E5D95D5370C29 /* VehiculeJourneysModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CC52885A40B04D9041E702 /* VehiculeJourneysModel.swift */; };
+		AECE913C2D302F013B11A661 /* TicketListFooterView.swift in Resources */ = {isa = PBXBuildFile; fileRef = EBA83BB8E06C342B53A699B5 /* TicketListFooterView.swift */; };
+		B1BA54D422E6A566DCCBC27E /* TicketListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C23997C2EE026E90B132B06 /* TicketListView.swift */; };
+		B444C5119E1C98EE936BABEE /* RailMapApp.swift in Resources */ = {isa = PBXBuildFile; fileRef = 11F517F81A6F929B476866EF /* RailMapApp.swift */; };
+		B4A7DACB807724DB2B49CCCD /* TicketDetailTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1EA0E07E1F2AD41481ED6 /* TicketDetailTopView.swift */; };
+		B629D48B47A9E0456AF5C089 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B810908715F246575B15021D /* RoundedCorner.swift */; };
+		BB72D6E7B1F1E3AE2AFBE919 /* StopInfoModel.swift in Resources */ = {isa = PBXBuildFile; fileRef = 7BAC6307C581F9E33A123BC5 /* StopInfoModel.swift */; };
+		BC943F8BE9056E0FAAEFE408 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696714B6A0375335AEFCD015 /* Launch Screen.storyboard */; };
+		C0B904792CAEE20249A4BEFC /* ApiService.swift in Resources */ = {isa = PBXBuildFile; fileRef = B76571B2B1D2F57B7F0731E2 /* ApiService.swift */; };
+		C11E59978FBD130F7AA11F2A /* AddTicketView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 41FBCAFC98F3F5D1EFF16056 /* AddTicketView.swift */; };
+		C31DF6727D9F2652446C79F5 /* Section1AddTicketView.swift in Resources */ = {isa = PBXBuildFile; fileRef = D180C677860766F1801D0A83 /* Section1AddTicketView.swift */; };
+		C47CAFEF9FDBA3B1521BEAF9 /* StopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4292113CF9231D35B16339 /* StopModel.swift */; };
+		CA5F12D99A145506F32DF69C /* TicketDetailMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F168BD6266D52FBA7AF41C60 /* TicketDetailMainView.swift */; };
+		CAC841253FBB6D23F6B660E8 /* AddTicketInfo.swift in Resources */ = {isa = PBXBuildFile; fileRef = 1F9CB10F2C099F13FAA5F9C5 /* AddTicketInfo.swift */; };
+		CB93060ECDE44BC83A23422A /* TuistAssets+RailMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356D28DD319AD64FF2BD978D /* TuistAssets+RailMapTests.swift */; };
+		CEFA94BFEBF9496192E0C704 /* listStopPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7097C655C4C0BCC8D1A227 /* listStopPointView.swift */; };
+		CF3EA7EB51B4E63E689F4A7B /* TicketListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069217BF1FD51965BC5EE96E /* TicketListRowView.swift */; };
+		D0E5F58B1FEF50CDBD705C02 /* ApiServiceProtocole.swift in Resources */ = {isa = PBXBuildFile; fileRef = C7CF7CB1D7C2F93A4EAFBC55 /* ApiServiceProtocole.swift */; };
+		D1D4C02E3C1D9EA31E3DEB78 /* NewJourneyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292505E1B09E9A3032B44EA1 /* NewJourneyModel.swift */; };
+		D585B97013E25E004EC0B616 /* TicketListView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 1C23997C2EE026E90B132B06 /* TicketListView.swift */; };
+		DDA070D7E660A8776B3E3042 /* TicketDetailTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF1EA0E07E1F2AD41481ED6 /* TicketDetailTopView.swift */; };
+		DFF49EE27B2CD56E9680EE2E /* RailMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF415039E72016E09CE62DE1 /* RailMap.xcdatamodeld */; };
+		E30851387BDF482E97F13008 /* LineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965C39C02110E17B70F9C9A5 /* LineShape.swift */; };
+		E31962A7B94F67C19C43486E /* TicketListViewModel.swift in Resources */ = {isa = PBXBuildFile; fileRef = FE4D7520AA839B9D241D1695 /* TicketListViewModel.swift */; };
+		E3C2C0F7F688288D9EDDAB01 /* LREdgeCutShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4102A353AD1AAF3B3FBF585 /* LREdgeCutShapeView.swift */; };
+		E5476E652520B7F26E5EFA28 /* AddTicketInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9CB10F2C099F13FAA5F9C5 /* AddTicketInfo.swift */; };
+		E554BAF03331FB41CFF0A248 /* AddTicketInfo.swift in Resources */ = {isa = PBXBuildFile; fileRef = 1F9CB10F2C099F13FAA5F9C5 /* AddTicketInfo.swift */; };
+		E9C059EFF4472DBA455B824B /* AddTicketViewModel.swift in Resources */ = {isa = PBXBuildFile; fileRef = 47328AD3164ECDC469768A20 /* AddTicketViewModel.swift */; };
+		EAF0CA160FA940E1E04A8EFD /* TicketDetailMainView.swift in Resources */ = {isa = PBXBuildFile; fileRef = F168BD6266D52FBA7AF41C60 /* TicketDetailMainView.swift */; };
+		ED923A4DE77125AF2505A5F3 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B810908715F246575B15021D /* RoundedCorner.swift */; };
+		EF094B2326F780DBAFEA67BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9240C2F44A85CD5CC3B7277 /* Assets.xcassets */; };
+		EFBB0886EEB42558EC814F87 /* TicketListRowViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595B28AFE794E0B3E7A0F656 /* TicketListRowViewModelTests.swift */; };
+		F195C40CCCE7806966685E5D /* RoundedCorner.swift in Resources */ = {isa = PBXBuildFile; fileRef = B810908715F246575B15021D /* RoundedCorner.swift */; };
+		F244A25DCF17F5726070A63C /* RailMapApp.swift in Resources */ = {isa = PBXBuildFile; fileRef = 11F517F81A6F929B476866EF /* RailMapApp.swift */; };
+		F6FB053F739F6342CF38BF5D /* TicketListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069217BF1FD51965BC5EE96E /* TicketListRowView.swift */; };
+		FF31EFAC4E79C3EC1635C43F /* TicketDetailTopView.swift in Resources */ = {isa = PBXBuildFile; fileRef = 3FF1EA0E07E1F2AD41481ED6 /* TicketDetailTopView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		86FD8F6A2AB9CDE4006D113C /* PBXContainerItemProxy */ = {
+		355B9D6ACC10C7E76BBCBA6F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 86F87B572AA35E8C00F7B710 /* Project object */;
+			containerPortal = 4114EBF426FB8E04DB25A127 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 86F87B5E2AA35E8C00F7B710;
+			remoteGlobalIDString = 8ACF205A79524BFDDB782570;
 			remoteInfo = RailMap;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1F0C23EC3403070DC3641132 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CD52237D785AFEAC38221DD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		86242D072AC4752D0010EA05 /* StopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopModel.swift; sourceTree = "<group>"; };
-		86242D0A2AC479690010EA05 /* StopInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopInfoModel.swift; sourceTree = "<group>"; };
-		863D04142AAB253500632672 /* VehiculeJourneysModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiculeJourneysModel.swift; sourceTree = "<group>"; };
-		863D04182AAB25DE00632672 /* NavitiaEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavitiaEndpoint.swift; sourceTree = "<group>"; };
-		863D041A2AAB29AD00632672 /* ApiServiceProtocole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceProtocole.swift; sourceTree = "<group>"; };
-		863D041C2AAB2A7D00632672 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
-		863D041F2AAB437800632672 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		863D04222AAB46B500632672 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
-		863D04252AAB4D3300632672 /* LineShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineShape.swift; sourceTree = "<group>"; };
-		863D04262AAB4D3300632672 /* LREdgeCutShapeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LREdgeCutShapeView.swift; sourceTree = "<group>"; };
-		863D04272AAB4D3300632672 /* BlockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockView.swift; sourceTree = "<group>"; };
-		863D04282AAB4D3300632672 /* RoundedCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
-		863D042E2AAB4D5E00632672 /* TicketListRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketListRowView.swift; sourceTree = "<group>"; };
-		863D042F2AAB4D5E00632672 /* TicketListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketListView.swift; sourceTree = "<group>"; };
-		863D04302AAB4D5E00632672 /* TicketListFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketListFooterView.swift; sourceTree = "<group>"; };
-		863D04392AAB4D9800632672 /* TicketListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketListViewModel.swift; sourceTree = "<group>"; };
-		863D04412AAB4DE900632672 /* TicketDetailTopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketDetailTopView.swift; sourceTree = "<group>"; };
-		863D04422AAB4DE900632672 /* TicketDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketDetailView.swift; sourceTree = "<group>"; };
-		863D04432AAB4DE900632672 /* TicketDetailMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketDetailMainView.swift; sourceTree = "<group>"; };
-		8671CBB32B076ED300042F30 /* RailMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RailMap.xcdatamodel; sourceTree = "<group>"; };
-		8671CBB52B076F2E00042F30 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		868AC9172AB34759002DA720 /* AddTicketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTicketViewModel.swift; sourceTree = "<group>"; };
-		868AC9192AB3603C002DA720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		868AC91B2AB44127002DA720 /* Section1AddTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section1AddTicketView.swift; sourceTree = "<group>"; };
-		868AC91E2AB446F9002DA720 /* Section2SubtitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section2SubtitleView.swift; sourceTree = "<group>"; };
-		868AC9202AB4489E002DA720 /* listStopPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listStopPointView.swift; sourceTree = "<group>"; };
-		868AC9232AB482D4002DA720 /* AddTicketInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTicketInfo.swift; sourceTree = "<group>"; };
-		869821A02AB1EE6E0014BDC2 /* AddTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTicketView.swift; sourceTree = "<group>"; };
-		86B775352AC45B540033B574 /* NewJourneyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJourneyModel.swift; sourceTree = "<group>"; };
-		86E467E52B0F69E400487567 /* NewJourneyVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJourneyVM.swift; sourceTree = "<group>"; };
-		86E467EA2B10B46400487567 /* TicketListRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TicketListRowViewModel.swift; path = "RailMap/View Models/TicketListRowViewModel.swift"; sourceTree = "<group>"; };
-		86F87B5F2AA35E8D00F7B710 /* RailMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RailMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		86F87B622AA35E8D00F7B710 /* RailMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailMapApp.swift; sourceTree = "<group>"; };
-		86F87B642AA35E8D00F7B710 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		86F87B662AA35E8D00F7B710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		86F87B692AA35E8D00F7B710 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		86FD8F662AB9CDE4006D113C /* RailMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RailMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		86FD8F682AB9CDE4006D113C /* RailMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailMapTests.swift; sourceTree = "<group>"; };
-		86FD8F6F2AB9CE2D006D113C /* AddTicketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTicketTests.swift; sourceTree = "<group>"; };
+		069217BF1FD51965BC5EE96E /* TicketListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketListRowView.swift; sourceTree = "<group>"; };
+		10A522EB05B114BD6FA4EBE8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		11F517F81A6F929B476866EF /* RailMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RailMapApp.swift; sourceTree = "<group>"; };
+		17A7E68D623298F7E14B9D05 /* RailMap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "RailMap-Info.plist"; sourceTree = "<group>"; };
+		1C23997C2EE026E90B132B06 /* TicketListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketListView.swift; sourceTree = "<group>"; };
+		1F9CB10F2C099F13FAA5F9C5 /* AddTicketInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTicketInfo.swift; sourceTree = "<group>"; };
+		292505E1B09E9A3032B44EA1 /* NewJourneyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJourneyModel.swift; sourceTree = "<group>"; };
+		32B5307C46773DAA84D294D9 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		356D28DD319AD64FF2BD978D /* TuistAssets+RailMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+RailMapTests.swift"; sourceTree = "<group>"; };
+		39E558EBAEF30FEFED284476 /* NavitiaEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavitiaEndpoint.swift; sourceTree = "<group>"; };
+		3FF1EA0E07E1F2AD41481ED6 /* TicketDetailTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDetailTopView.swift; sourceTree = "<group>"; };
+		41FBCAFC98F3F5D1EFF16056 /* AddTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTicketView.swift; sourceTree = "<group>"; };
+		4238995F5D0B8D5B51EF8284 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		4335E131661A6BF248463776 /* TicketListRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketListRowViewModel.swift; sourceTree = "<group>"; };
+		47328AD3164ECDC469768A20 /* AddTicketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTicketViewModel.swift; sourceTree = "<group>"; };
+		49CC52885A40B04D9041E702 /* VehiculeJourneysModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiculeJourneysModel.swift; sourceTree = "<group>"; };
+		4C7C00BB8B1B5940F911262E /* RailMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RailMap.xcdatamodel; sourceTree = "<group>"; };
+		595B28AFE794E0B3E7A0F656 /* TicketListRowViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketListRowViewModelTests.swift; sourceTree = "<group>"; };
+		5D7EEA9D30E8B7F5CE017BAF /* TicketDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDetailView.swift; sourceTree = "<group>"; };
+		696714B6A0375335AEFCD015 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		6F53999BABFD59BDC648AF0B /* RailMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RailMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71B5B531B7D988D2145AD207 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		7BAC6307C581F9E33A123BC5 /* StopInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopInfoModel.swift; sourceTree = "<group>"; };
+		820FC59871EFA0B65A482C17 /* RailMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RailMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C7097C655C4C0BCC8D1A227 /* listStopPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listStopPointView.swift; sourceTree = "<group>"; };
+		8DF9598F9176C5337F3F8E0A /* TuistBundle+RailMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+RailMapTests.swift"; sourceTree = "<group>"; };
+		965C39C02110E17B70F9C9A5 /* LineShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineShape.swift; sourceTree = "<group>"; };
+		A8DD0C745F9CEAA9D82BA20C /* Section2SubtitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section2SubtitleView.swift; sourceTree = "<group>"; };
+		AA80025001E7A1D8137B5FD5 /* BlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockView.swift; sourceTree = "<group>"; };
+		B76571B2B1D2F57B7F0731E2 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		B810908715F246575B15021D /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		BB64B7D3701488AB6EA29AB2 /* TuistBundle+RailMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+RailMap.swift"; sourceTree = "<group>"; };
+		BD4292113CF9231D35B16339 /* StopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopModel.swift; sourceTree = "<group>"; };
+		C10B403B53E52550B718A6C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C2BE06623890094D74581143 /* RailMapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "RailMapTests-Info.plist"; sourceTree = "<group>"; };
+		C7CF7CB1D7C2F93A4EAFBC55 /* ApiServiceProtocole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceProtocole.swift; sourceTree = "<group>"; };
+		D01C27C592C5DCD6A845E64B /* TuistAssets+RailMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+RailMap.swift"; sourceTree = "<group>"; };
+		D180C677860766F1801D0A83 /* Section1AddTicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section1AddTicketView.swift; sourceTree = "<group>"; };
+		D4102A353AD1AAF3B3FBF585 /* LREdgeCutShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LREdgeCutShapeView.swift; sourceTree = "<group>"; };
+		D4CBDDE5C1134ACE4E6DAC0A /* NewJourneyVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJourneyVM.swift; sourceTree = "<group>"; };
+		D9240C2F44A85CD5CC3B7277 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBA83BB8E06C342B53A699B5 /* TicketListFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketListFooterView.swift; sourceTree = "<group>"; };
+		F168BD6266D52FBA7AF41C60 /* TicketDetailMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDetailMainView.swift; sourceTree = "<group>"; };
+		FE4D7520AA839B9D241D1695 /* TicketListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		86F87B5C2AA35E8C00F7B710 /* Frameworks */ = {
+		644158DC9B218B2A6FF57F58 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				993F6109BB34AD7D5F071271 /* RailMapHelpers in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		86FD8F632AB9CDE4006D113C /* Frameworks */ = {
+		B69BC03CBDE7088B024C4DA0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -117,408 +250,579 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		86242D092AC479520010EA05 /* NewJourney */ = {
+		0027D9CB7271681C784A13B9 /* BottomSheetView */ = {
 			isa = PBXGroup;
 			children = (
-				86B775352AC45B540033B574 /* NewJourneyModel.swift */,
-				86242D072AC4752D0010EA05 /* StopModel.swift */,
-				86242D0A2AC479690010EA05 /* StopInfoModel.swift */,
-			);
-			path = NewJourney;
-			sourceTree = "<group>";
-		};
-		863D040E2AAB20C100632672 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				86E467E22B0CABBA00487567 /* Date */,
-				86242D092AC479520010EA05 /* NewJourney */,
-				863D04342AAB4D6D00632672 /* Tickets */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		863D040F2AAB20C700632672 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				86F87B642AA35E8D00F7B710 /* ContentView.swift */,
-				863D041E2AAB436C00632672 /* Map */,
-				863D04242AAB4CFA00632672 /* Component */,
-				868AC91A2AB440C2002DA720 /* AddTicket */,
-				863D04212AAB469900632672 /* BottomSheetView */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		863D04102AAB20CD00632672 /* View Models */ = {
-			isa = PBXGroup;
-			children = (
-				868AC9162AB34744002DA720 /* AddTicketVM */,
-				863D04392AAB4D9800632672 /* TicketListViewModel.swift */,
-				86E467E52B0F69E400487567 /* NewJourneyVM.swift */,
-			);
-			path = "View Models";
-			sourceTree = "<group>";
-		};
-		863D04112AAB20D300632672 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				863D04122AAB21DD00632672 /* APIService */,
-			);
-			path = Utilities;
-			sourceTree = "<group>";
-		};
-		863D04122AAB21DD00632672 /* APIService */ = {
-			isa = PBXGroup;
-			children = (
-				863D04172AAB258D00632672 /* Endpoints */,
-				863D04132AAB250000632672 /* Models */,
-				863D041A2AAB29AD00632672 /* ApiServiceProtocole.swift */,
-				863D041C2AAB2A7D00632672 /* ApiService.swift */,
-			);
-			path = APIService;
-			sourceTree = "<group>";
-		};
-		863D04132AAB250000632672 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				863D04162AAB257C00632672 /* NavitiaModels */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		863D04162AAB257C00632672 /* NavitiaModels */ = {
-			isa = PBXGroup;
-			children = (
-				863D04142AAB253500632672 /* VehiculeJourneysModel.swift */,
-			);
-			path = NavitiaModels;
-			sourceTree = "<group>";
-		};
-		863D04172AAB258D00632672 /* Endpoints */ = {
-			isa = PBXGroup;
-			children = (
-				863D04182AAB25DE00632672 /* NavitiaEndpoint.swift */,
-			);
-			path = Endpoints;
-			sourceTree = "<group>";
-		};
-		863D041E2AAB436C00632672 /* Map */ = {
-			isa = PBXGroup;
-			children = (
-				863D041F2AAB437800632672 /* MapView.swift */,
-			);
-			path = Map;
-			sourceTree = "<group>";
-		};
-		863D04212AAB469900632672 /* BottomSheetView */ = {
-			isa = PBXGroup;
-			children = (
-				863D04222AAB46B500632672 /* BottomSheetView.swift */,
-				863D04402AAB4DD900632672 /* TicketDetailView */,
-				863D042D2AAB4D3B00632672 /* TicketList */,
+				861349263C519004987DAC7B /* TicketDetailView */,
+				3B78380301B01DB2D4097E3F /* TicketList */,
+				32B5307C46773DAA84D294D9 /* BottomSheetView.swift */,
 			);
 			path = BottomSheetView;
 			sourceTree = "<group>";
 		};
-		863D04242AAB4CFA00632672 /* Component */ = {
+		02C00B4E82853F0698BD9A86 /* Endpoints */ = {
 			isa = PBXGroup;
 			children = (
-				863D04272AAB4D3300632672 /* BlockView.swift */,
-				863D04252AAB4D3300632672 /* LineShape.swift */,
-				863D04262AAB4D3300632672 /* LREdgeCutShapeView.swift */,
-				863D04282AAB4D3300632672 /* RoundedCorner.swift */,
+				39E558EBAEF30FEFED284476 /* NavitiaEndpoint.swift */,
 			);
-			path = Component;
+			path = Endpoints;
 			sourceTree = "<group>";
 		};
-		863D042D2AAB4D3B00632672 /* TicketList */ = {
+		14C8D2BABF5703A1F589373C /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				863D04302AAB4D5E00632672 /* TicketListFooterView.swift */,
-				863D042E2AAB4D5E00632672 /* TicketListRowView.swift */,
-				863D042F2AAB4D5E00632672 /* TicketListView.swift */,
-			);
-			path = TicketList;
-			sourceTree = "<group>";
-		};
-		863D04342AAB4D6D00632672 /* Tickets */ = {
-			isa = PBXGroup;
-			children = (
-				868AC9222AB482B3002DA720 /* AddTicket */,
-			);
-			path = Tickets;
-			sourceTree = "<group>";
-		};
-		863D04402AAB4DD900632672 /* TicketDetailView */ = {
-			isa = PBXGroup;
-			children = (
-				863D04432AAB4DE900632672 /* TicketDetailMainView.swift */,
-				863D04412AAB4DE900632672 /* TicketDetailTopView.swift */,
-				863D04422AAB4DE900632672 /* TicketDetailView.swift */,
-			);
-			path = TicketDetailView;
-			sourceTree = "<group>";
-		};
-		868AC9162AB34744002DA720 /* AddTicketVM */ = {
-			isa = PBXGroup;
-			children = (
-				868AC9232AB482D4002DA720 /* AddTicketInfo.swift */,
-				868AC9172AB34759002DA720 /* AddTicketViewModel.swift */,
-			);
-			path = AddTicketVM;
-			sourceTree = "<group>";
-		};
-		868AC91A2AB440C2002DA720 /* AddTicket */ = {
-			isa = PBXGroup;
-			children = (
-				868AC91D2AB446DC002DA720 /* Section 2 */,
-				869821A02AB1EE6E0014BDC2 /* AddTicketView.swift */,
-				868AC91B2AB44127002DA720 /* Section1AddTicketView.swift */,
-			);
-			path = AddTicket;
-			sourceTree = "<group>";
-		};
-		868AC91D2AB446DC002DA720 /* Section 2 */ = {
-			isa = PBXGroup;
-			children = (
-				868AC91E2AB446F9002DA720 /* Section2SubtitleView.swift */,
-				868AC9202AB4489E002DA720 /* listStopPointView.swift */,
-			);
-			path = "Section 2";
-			sourceTree = "<group>";
-		};
-		868AC9222AB482B3002DA720 /* AddTicket */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AddTicket;
-			sourceTree = "<group>";
-		};
-		86E467E22B0CABBA00487567 /* Date */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Date;
-			sourceTree = "<group>";
-		};
-		86F87B562AA35E8C00F7B710 = {
-			isa = PBXGroup;
-			children = (
-				86E467EA2B10B46400487567 /* TicketListRowViewModel.swift */,
-				86F87B612AA35E8D00F7B710 /* RailMap */,
-				86FD8F672AB9CDE4006D113C /* RailMapTests */,
-				86F87B602AA35E8D00F7B710 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		86F87B602AA35E8D00F7B710 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				86F87B5F2AA35E8D00F7B710 /* RailMap.app */,
-				86FD8F662AB9CDE4006D113C /* RailMapTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		86F87B612AA35E8D00F7B710 /* RailMap */ = {
-			isa = PBXGroup;
-			children = (
-				868AC9192AB3603C002DA720 /* Info.plist */,
-				86F87B622AA35E8D00F7B710 /* RailMapApp.swift */,
-				8671CBB22B076ED300042F30 /* RailMap.xcdatamodeld */,
-				8671CBB52B076F2E00042F30 /* DataController.swift */,
-				863D040F2AAB20C700632672 /* Views */,
-				863D04102AAB20CD00632672 /* View Models */,
-				863D040E2AAB20C100632672 /* Models */,
-				863D04112AAB20D300632672 /* Utilities */,
-				86F87B662AA35E8D00F7B710 /* Assets.xcassets */,
-				86F87B682AA35E8D00F7B710 /* Preview Content */,
-			);
-			path = RailMap;
-			sourceTree = "<group>";
-		};
-		86F87B682AA35E8D00F7B710 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				86F87B692AA35E8D00F7B710 /* Preview Assets.xcassets */,
+				10A522EB05B114BD6FA4EBE8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		86FD8F672AB9CDE4006D113C /* RailMapTests */ = {
+		24F6DD9CEA3875F18EBE59C6 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				86FD8F682AB9CDE4006D113C /* RailMapTests.swift */,
-				86FD8F6F2AB9CE2D006D113C /* AddTicketTests.swift */,
+				4238995F5D0B8D5B51EF8284 /* MapView.swift */,
 			);
-			path = RailMapTests;
+			path = Map;
+			sourceTree = "<group>";
+		};
+		284ADF8011437F6BF52DAD3D /* NewJourney */ = {
+			isa = PBXGroup;
+			children = (
+				292505E1B09E9A3032B44EA1 /* NewJourneyModel.swift */,
+				7BAC6307C581F9E33A123BC5 /* StopInfoModel.swift */,
+				BD4292113CF9231D35B16339 /* StopModel.swift */,
+			);
+			path = NewJourney;
+			sourceTree = "<group>";
+		};
+		28F2FA4C71EC2B3525FEF55C /* AddTicketVM */ = {
+			isa = PBXGroup;
+			children = (
+				1F9CB10F2C099F13FAA5F9C5 /* AddTicketInfo.swift */,
+				47328AD3164ECDC469768A20 /* AddTicketViewModel.swift */,
+			);
+			path = AddTicketVM;
+			sourceTree = "<group>";
+		};
+		35972802DFE9C7216EA4C5EB /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				AA80025001E7A1D8137B5FD5 /* BlockView.swift */,
+				965C39C02110E17B70F9C9A5 /* LineShape.swift */,
+				D4102A353AD1AAF3B3FBF585 /* LREdgeCutShapeView.swift */,
+				B810908715F246575B15021D /* RoundedCorner.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		36DBBAC2A9B9F53C9BE0EA1B = {
+			isa = PBXGroup;
+			children = (
+				D4854B3E017A75FAB4B90287 /* Project */,
+				A0DA4715B44AAD34432FA2A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B78380301B01DB2D4097E3F /* TicketList */ = {
+			isa = PBXGroup;
+			children = (
+				EBA83BB8E06C342B53A699B5 /* TicketListFooterView.swift */,
+				069217BF1FD51965BC5EE96E /* TicketListRowView.swift */,
+				1C23997C2EE026E90B132B06 /* TicketListView.swift */,
+			);
+			path = TicketList;
+			sourceTree = "<group>";
+		};
+		4384F6030F83AC9BF9C451CA /* Derived */ = {
+			isa = PBXGroup;
+			children = (
+				6FD1EA98DA5E536E2C04349E /* InfoPlists */,
+				86988D1BAD6EA9D7584B5A8B /* Sources */,
+			);
+			path = Derived;
+			sourceTree = "<group>";
+		};
+		452DA0B2C869306FB919EC5C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7A410EFD6464023CB460A268 /* AddTicket */,
+				0027D9CB7271681C784A13B9 /* BottomSheetView */,
+				35972802DFE9C7216EA4C5EB /* Component */,
+				24F6DD9CEA3875F18EBE59C6 /* Map */,
+				C10B403B53E52550B718A6C0 /* ContentView.swift */,
+				696714B6A0375335AEFCD015 /* Launch Screen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4BA2E4435A08F4481E4E469A /* NavitiaModels */ = {
+			isa = PBXGroup;
+			children = (
+				49CC52885A40B04D9041E702 /* VehiculeJourneysModel.swift */,
+			);
+			path = NavitiaModels;
+			sourceTree = "<group>";
+		};
+		56E559D1F80ED3A04958D34F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B62E58277094DFBDFFF744B2 /* Sources */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		63DD852D423DC2363FFD5047 /* RailMap */ = {
+			isa = PBXGroup;
+			children = (
+				56E559D1F80ED3A04958D34F /* App */,
+			);
+			path = RailMap;
+			sourceTree = "<group>";
+		};
+		6FD1EA98DA5E536E2C04349E /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				17A7E68D623298F7E14B9D05 /* RailMap-Info.plist */,
+				C2BE06623890094D74581143 /* RailMapTests-Info.plist */,
+			);
+			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		78C41788C0C287A6E919DB9E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				284ADF8011437F6BF52DAD3D /* NewJourney */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7A410EFD6464023CB460A268 /* AddTicket */ = {
+			isa = PBXGroup;
+			children = (
+				F105FE0FBD05C01B5A86AB19 /* Section 2 */,
+				41FBCAFC98F3F5D1EFF16056 /* AddTicketView.swift */,
+				D180C677860766F1801D0A83 /* Section1AddTicketView.swift */,
+			);
+			path = AddTicket;
+			sourceTree = "<group>";
+		};
+		8345929765823A0C34BEBA79 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4BA2E4435A08F4481E4E469A /* NavitiaModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		861349263C519004987DAC7B /* TicketDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				F168BD6266D52FBA7AF41C60 /* TicketDetailMainView.swift */,
+				3FF1EA0E07E1F2AD41481ED6 /* TicketDetailTopView.swift */,
+				5D7EEA9D30E8B7F5CE017BAF /* TicketDetailView.swift */,
+			);
+			path = TicketDetailView;
+			sourceTree = "<group>";
+		};
+		86988D1BAD6EA9D7584B5A8B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D01C27C592C5DCD6A845E64B /* TuistAssets+RailMap.swift */,
+				356D28DD319AD64FF2BD978D /* TuistAssets+RailMapTests.swift */,
+				BB64B7D3701488AB6EA29AB2 /* TuistBundle+RailMap.swift */,
+				8DF9598F9176C5337F3F8E0A /* TuistBundle+RailMapTests.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		952573186D09C1772B7DE4DF /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				02C00B4E82853F0698BD9A86 /* Endpoints */,
+				8345929765823A0C34BEBA79 /* Models */,
+				B76571B2B1D2F57B7F0731E2 /* ApiService.swift */,
+				C7CF7CB1D7C2F93A4EAFBC55 /* ApiServiceProtocole.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		A0DA4715B44AAD34432FA2A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F53999BABFD59BDC648AF0B /* RailMap.app */,
+				820FC59871EFA0B65A482C17 /* RailMapTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1BEAA01964694A8E0061C35 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				28F2FA4C71EC2B3525FEF55C /* AddTicketVM */,
+				D4CBDDE5C1134ACE4E6DAC0A /* NewJourneyVM.swift */,
+				4335E131661A6BF248463776 /* TicketListRowViewModel.swift */,
+				FE4D7520AA839B9D241D1695 /* TicketListViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		B5B447DDF502CB2F7906376C /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DE1BBAD9B7C30680DE9547C9 /* UnitTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		B62E58277094DFBDFFF744B2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				78C41788C0C287A6E919DB9E /* Models */,
+				14C8D2BABF5703A1F589373C /* Preview Content */,
+				EF415039E72016E09CE62DE1 /* RailMap.xcdatamodeld */,
+				B5B447DDF502CB2F7906376C /* Tests */,
+				C13F3DC779CBD5B4984C8D7F /* Utilities */,
+				B1BEAA01964694A8E0061C35 /* View Models */,
+				452DA0B2C869306FB919EC5C /* Views */,
+				D9240C2F44A85CD5CC3B7277 /* Assets.xcassets */,
+				71B5B531B7D988D2145AD207 /* DataController.swift */,
+				11F517F81A6F929B476866EF /* RailMapApp.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C13F3DC779CBD5B4984C8D7F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				952573186D09C1772B7DE4DF /* APIService */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D4854B3E017A75FAB4B90287 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				4384F6030F83AC9BF9C451CA /* Derived */,
+				63DD852D423DC2363FFD5047 /* RailMap */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		DE1BBAD9B7C30680DE9547C9 /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				595B28AFE794E0B3E7A0F656 /* TicketListRowViewModelTests.swift */,
+			);
+			path = UnitTests;
+			sourceTree = "<group>";
+		};
+		F105FE0FBD05C01B5A86AB19 /* Section 2 */ = {
+			isa = PBXGroup;
+			children = (
+				8C7097C655C4C0BCC8D1A227 /* listStopPointView.swift */,
+				A8DD0C745F9CEAA9D82BA20C /* Section2SubtitleView.swift */,
+			);
+			path = "Section 2";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		86F87B5E2AA35E8C00F7B710 /* RailMap */ = {
+		8ACF205A79524BFDDB782570 /* RailMap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 86F87B6F2AA35E8D00F7B710 /* Build configuration list for PBXNativeTarget "RailMap" */;
+			buildConfigurationList = B647D5EF78E0808F398143A4 /* Build configuration list for PBXNativeTarget "RailMap" */;
 			buildPhases = (
-				86F87B5B2AA35E8C00F7B710 /* Sources */,
-				86F87B5C2AA35E8C00F7B710 /* Frameworks */,
-				86F87B5D2AA35E8C00F7B710 /* Resources */,
+				4EFAF4BED206129C44014C68 /* Sources */,
+				72765BF9BDC1A6113052F00B /* Resources */,
+				1F0C23EC3403070DC3641132 /* Embed Frameworks */,
+				644158DC9B218B2A6FF57F58 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = RailMap;
+			packageProductDependencies = (
+				369A4A6BEA47BB2435F623AA /* RailMapHelpers */,
+			);
 			productName = RailMap;
-			productReference = 86F87B5F2AA35E8D00F7B710 /* RailMap.app */;
+			productReference = 6F53999BABFD59BDC648AF0B /* RailMap.app */;
 			productType = "com.apple.product-type.application";
 		};
-		86FD8F652AB9CDE4006D113C /* RailMapTests */ = {
+		B132BA53A908C57F3DE60ED4 /* RailMapTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 86FD8F6E2AB9CDE4006D113C /* Build configuration list for PBXNativeTarget "RailMapTests" */;
+			buildConfigurationList = AEBD87447DB688BEADFB3164 /* Build configuration list for PBXNativeTarget "RailMapTests" */;
 			buildPhases = (
-				86FD8F622AB9CDE4006D113C /* Sources */,
-				86FD8F632AB9CDE4006D113C /* Frameworks */,
-				86FD8F642AB9CDE4006D113C /* Resources */,
+				CB6CCF285912468D62EFC50B /* Sources */,
+				F8DB8403FEF9A5D65675D9F6 /* Resources */,
+				2CD52237D785AFEAC38221DD /* Embed Frameworks */,
+				B69BC03CBDE7088B024C4DA0 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				86FD8F6B2AB9CDE4006D113C /* PBXTargetDependency */,
+				6DF77EDFF511F1B6E5F4BC25 /* PBXTargetDependency */,
 			);
 			name = RailMapTests;
 			productName = RailMapTests;
-			productReference = 86FD8F662AB9CDE4006D113C /* RailMapTests.xctest */;
+			productReference = 820FC59871EFA0B65A482C17 /* RailMapTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		86F87B572AA35E8C00F7B710 /* Project object */ = {
+		4114EBF426FB8E04DB25A127 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				BuildIndependentTargetsInParallel = YES;
+				ORGANIZATIONNAME = "jeremie-ada";
 				TargetAttributes = {
-					86F87B5E2AA35E8C00F7B710 = {
-						CreatedOnToolsVersion = 15.0;
-					};
-					86FD8F652AB9CDE4006D113C = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = 86F87B5E2AA35E8C00F7B710;
+					B132BA53A908C57F3DE60ED4 = {
+						TestTargetID = 8ACF205A79524BFDDB782570;
 					};
 				};
 			};
-			buildConfigurationList = 86F87B5A2AA35E8C00F7B710 /* Build configuration list for PBXProject "RailMap" */;
+			buildConfigurationList = 3DEB74EA6C85D106A3CBB6B2 /* Build configuration list for PBXProject "RailMap" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
-			mainGroup = 86F87B562AA35E8C00F7B710;
-			productRefGroup = 86F87B602AA35E8D00F7B710 /* Products */;
+			mainGroup = 36DBBAC2A9B9F53C9BE0EA1B;
+			productRefGroup = A0DA4715B44AAD34432FA2A5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				86F87B5E2AA35E8C00F7B710 /* RailMap */,
-				86FD8F652AB9CDE4006D113C /* RailMapTests */,
+				8ACF205A79524BFDDB782570 /* RailMap */,
+				B132BA53A908C57F3DE60ED4 /* RailMapTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		86F87B5D2AA35E8C00F7B710 /* Resources */ = {
+		72765BF9BDC1A6113052F00B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86F87B6A2AA35E8D00F7B710 /* Preview Assets.xcassets in Resources */,
-				86F87B672AA35E8D00F7B710 /* Assets.xcassets in Resources */,
+				EF094B2326F780DBAFEA67BB /* Assets.xcassets in Resources */,
+				3AA33FEF8981F062B3901BC0 /* DataController.swift in Resources */,
+				312B7409442BD34AFFBD75BC /* NewJourneyModel.swift in Resources */,
+				2BDD7AE41BFFA6FDB4B8BDBD /* StopInfoModel.swift in Resources */,
+				3D8E0122B957D64E01D5757C /* StopModel.swift in Resources */,
+				9D2F20D9F8DF984E4ECA20A6 /* Preview Assets.xcassets in Resources */,
+				F244A25DCF17F5726070A63C /* RailMapApp.swift in Resources */,
+				468E82336A97E33A85449BB3 /* TicketListRowViewModelTests.swift in Resources */,
+				C0B904792CAEE20249A4BEFC /* ApiService.swift in Resources */,
+				4DC4095EC8BF4E70A4E50AB2 /* ApiServiceProtocole.swift in Resources */,
+				74EFA82AEF01AC3FE9E08A52 /* NavitiaEndpoint.swift in Resources */,
+				60B6D5AE2B7AD34BFA6BD5A2 /* VehiculeJourneysModel.swift in Resources */,
+				CAC841253FBB6D23F6B660E8 /* AddTicketInfo.swift in Resources */,
+				365CBE12F53805BBDCA330A6 /* AddTicketViewModel.swift in Resources */,
+				8142D0D2580119AF93D43CCD /* NewJourneyVM.swift in Resources */,
+				17D1512CF365C5584C3C9ED9 /* TicketListRowViewModel.swift in Resources */,
+				6D803F17B44127A78BE48EEA /* TicketListViewModel.swift in Resources */,
+				423F322AB4F454CE816D4CDB /* AddTicketView.swift in Resources */,
+				7F2D739E53B9B36C0BDCC2AD /* Section2SubtitleView.swift in Resources */,
+				25CD4DA81BFFA9C989F3BBB2 /* listStopPointView.swift in Resources */,
+				C31DF6727D9F2652446C79F5 /* Section1AddTicketView.swift in Resources */,
+				1394B9C3FBE69F57723FBC31 /* BottomSheetView.swift in Resources */,
+				EAF0CA160FA940E1E04A8EFD /* TicketDetailMainView.swift in Resources */,
+				1CE926B771689765C051F2EC /* TicketDetailTopView.swift in Resources */,
+				44DC60B7D755118BA7E1B1CD /* TicketDetailView.swift in Resources */,
+				2964DF6C4A4E2CBD4C96AF1B /* TicketListFooterView.swift in Resources */,
+				929A01F3DD596B5CDD6E0073 /* TicketListRowView.swift in Resources */,
+				7ADBA7826555548CB8EC26E2 /* TicketListView.swift in Resources */,
+				A5668DCC2B9347E687EE85DF /* BlockView.swift in Resources */,
+				A0DC5DF4EE1F1AA08505F5D0 /* LREdgeCutShapeView.swift in Resources */,
+				6045B4DA19149213EB41221E /* LineShape.swift in Resources */,
+				2A52DA6E5962F9701C48B1BD /* RoundedCorner.swift in Resources */,
+				0295B7C4CBBC28BAC4119A43 /* ContentView.swift in Resources */,
+				AB4B1EEB0DCAE3470A4F825F /* Launch Screen.storyboard in Resources */,
+				4113DF4C76FF583CCAAB4B7F /* MapView.swift in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		86FD8F642AB9CDE4006D113C /* Resources */ = {
+		F8DB8403FEF9A5D65675D9F6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9447C3E8CF98D2EAF8542763 /* Assets.xcassets in Resources */,
+				61DC2B5FF38D1E51FB334EF8 /* DataController.swift in Resources */,
+				90A84EE49A3A0CABEB0B3955 /* NewJourneyModel.swift in Resources */,
+				BB72D6E7B1F1E3AE2AFBE919 /* StopInfoModel.swift in Resources */,
+				1B0B6942318BF62EB12500CB /* StopModel.swift in Resources */,
+				3056BAD9A4684E90A0D06910 /* Preview Assets.xcassets in Resources */,
+				B444C5119E1C98EE936BABEE /* RailMapApp.swift in Resources */,
+				83893967C19B3BCAAB08B7A1 /* TicketListRowViewModelTests.swift in Resources */,
+				9528628C59D501390A1789C3 /* ApiService.swift in Resources */,
+				D0E5F58B1FEF50CDBD705C02 /* ApiServiceProtocole.swift in Resources */,
+				26AE617EE2C311C7460C07AF /* NavitiaEndpoint.swift in Resources */,
+				1FD0B998DF22636B0DA6C276 /* VehiculeJourneysModel.swift in Resources */,
+				E554BAF03331FB41CFF0A248 /* AddTicketInfo.swift in Resources */,
+				E9C059EFF4472DBA455B824B /* AddTicketViewModel.swift in Resources */,
+				1C82C75FD691F360292CAC31 /* NewJourneyVM.swift in Resources */,
+				6B90FECF3D3ACF610183B0B0 /* TicketListRowViewModel.swift in Resources */,
+				E31962A7B94F67C19C43486E /* TicketListViewModel.swift in Resources */,
+				C11E59978FBD130F7AA11F2A /* AddTicketView.swift in Resources */,
+				146826575147BE94392546E7 /* Section2SubtitleView.swift in Resources */,
+				4F0EB301A58F6EEFB9772A49 /* listStopPointView.swift in Resources */,
+				485E99B10EEFD129AC16D5FF /* Section1AddTicketView.swift in Resources */,
+				1D84ABC079B2335477E48DA1 /* BottomSheetView.swift in Resources */,
+				061EBF80D377255879B1778A /* TicketDetailMainView.swift in Resources */,
+				FF31EFAC4E79C3EC1635C43F /* TicketDetailTopView.swift in Resources */,
+				6B7254D20331FD9D90896344 /* TicketDetailView.swift in Resources */,
+				AECE913C2D302F013B11A661 /* TicketListFooterView.swift in Resources */,
+				559B693A6AD0EEF5A1ADC6B7 /* TicketListRowView.swift in Resources */,
+				D585B97013E25E004EC0B616 /* TicketListView.swift in Resources */,
+				6FD92D2615A1662D4F241381 /* BlockView.swift in Resources */,
+				3D62024778D25602F316B3BC /* LREdgeCutShapeView.swift in Resources */,
+				90642050180E5F16A9A6AC83 /* LineShape.swift in Resources */,
+				F195C40CCCE7806966685E5D /* RoundedCorner.swift in Resources */,
+				47165939BED5C3D1437C05F1 /* ContentView.swift in Resources */,
+				BC943F8BE9056E0FAAEFE408 /* Launch Screen.storyboard in Resources */,
+				6D55E98FED0EFFE8253B1068 /* MapView.swift in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		86F87B5B2AA35E8C00F7B710 /* Sources */ = {
+		4EFAF4BED206129C44014C68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				868AC91C2AB44127002DA720 /* Section1AddTicketView.swift in Sources */,
-				868AC9212AB4489E002DA720 /* listStopPointView.swift in Sources */,
-				863D043A2AAB4D9800632672 /* TicketListViewModel.swift in Sources */,
-				863D042C2AAB4D3300632672 /* RoundedCorner.swift in Sources */,
-				8671CBB42B076ED300042F30 /* RailMap.xcdatamodeld in Sources */,
-				86E467E62B0F69E400487567 /* NewJourneyVM.swift in Sources */,
-				863D04202AAB437800632672 /* MapView.swift in Sources */,
-				8671CBB62B076F2E00042F30 /* DataController.swift in Sources */,
-				863D04232AAB46B500632672 /* BottomSheetView.swift in Sources */,
-				863D04452AAB4DE900632672 /* TicketDetailView.swift in Sources */,
-				863D042B2AAB4D3300632672 /* BlockView.swift in Sources */,
-				86E467E72B0FA4E000487567 /* NewJourneyModel.swift in Sources */,
-				863D04152AAB253500632672 /* VehiculeJourneysModel.swift in Sources */,
-				863D04332AAB4D5E00632672 /* TicketListFooterView.swift in Sources */,
-				86E467E92B0FA4E700487567 /* StopInfoModel.swift in Sources */,
-				868AC9242AB482D4002DA720 /* AddTicketInfo.swift in Sources */,
-				868AC9182AB34759002DA720 /* AddTicketViewModel.swift in Sources */,
-				86F87B652AA35E8D00F7B710 /* ContentView.swift in Sources */,
-				868AC91F2AB446F9002DA720 /* Section2SubtitleView.swift in Sources */,
-				869821A12AB1EE6E0014BDC2 /* AddTicketView.swift in Sources */,
-				86E467E82B0FA4E400487567 /* StopModel.swift in Sources */,
-				863D04292AAB4D3300632672 /* LineShape.swift in Sources */,
-				863D04312AAB4D5E00632672 /* TicketListRowView.swift in Sources */,
-				863D041D2AAB2A7D00632672 /* ApiService.swift in Sources */,
-				863D041B2AAB29AD00632672 /* ApiServiceProtocole.swift in Sources */,
-				863D04462AAB4DE900632672 /* TicketDetailMainView.swift in Sources */,
-				863D04442AAB4DE900632672 /* TicketDetailTopView.swift in Sources */,
-				86E467EB2B10B46400487567 /* TicketListRowViewModel.swift in Sources */,
-				863D04192AAB25DE00632672 /* NavitiaEndpoint.swift in Sources */,
-				863D042A2AAB4D3300632672 /* LREdgeCutShapeView.swift in Sources */,
-				863D04322AAB4D5E00632672 /* TicketListView.swift in Sources */,
-				86F87B632AA35E8D00F7B710 /* RailMapApp.swift in Sources */,
+				626C1D7B81BC4C6D00F813E7 /* TuistAssets+RailMap.swift in Sources */,
+				84A8A5E24539C82B761CC601 /* TuistBundle+RailMap.swift in Sources */,
+				7DEFA253C6B9BF2ACB41E5CA /* DataController.swift in Sources */,
+				67A7FDD8CF232852471EECB5 /* NewJourneyModel.swift in Sources */,
+				63802929837C03CF2DE2CEB4 /* StopInfoModel.swift in Sources */,
+				8545CFD8AEB756AE4F248BDE /* StopModel.swift in Sources */,
+				98FC11013C0C821AFF48CFF3 /* RailMapApp.swift in Sources */,
+				EFBB0886EEB42558EC814F87 /* TicketListRowViewModelTests.swift in Sources */,
+				952B69BC026716916EC35FCF /* ApiService.swift in Sources */,
+				6A98A32FD8780C216142EA20 /* ApiServiceProtocole.swift in Sources */,
+				390387DCBAD41F7670C08BF8 /* NavitiaEndpoint.swift in Sources */,
+				AD46B4D8358E5D95D5370C29 /* VehiculeJourneysModel.swift in Sources */,
+				909037D10BB2EA850D87777C /* AddTicketInfo.swift in Sources */,
+				054BA6F70B2B1D14FDC0C8A4 /* AddTicketViewModel.swift in Sources */,
+				771696B44942EB917E767348 /* NewJourneyVM.swift in Sources */,
+				482DF377D439433D265276E6 /* TicketListRowViewModel.swift in Sources */,
+				9B71F05EBE571541B38DF1F3 /* TicketListViewModel.swift in Sources */,
+				8A7656E2976690D705AF6C38 /* AddTicketView.swift in Sources */,
+				A09CFCD94EC5947C59672A80 /* Section2SubtitleView.swift in Sources */,
+				CEFA94BFEBF9496192E0C704 /* listStopPointView.swift in Sources */,
+				30396F861B7DF5EC593FE6F2 /* Section1AddTicketView.swift in Sources */,
+				4E07F94DDDE8ED51BC5F1880 /* BottomSheetView.swift in Sources */,
+				CA5F12D99A145506F32DF69C /* TicketDetailMainView.swift in Sources */,
+				DDA070D7E660A8776B3E3042 /* TicketDetailTopView.swift in Sources */,
+				52ED85C340FF957CC990D079 /* TicketDetailView.swift in Sources */,
+				8F033BAF26A500F994DD8114 /* TicketListFooterView.swift in Sources */,
+				CF3EA7EB51B4E63E689F4A7B /* TicketListRowView.swift in Sources */,
+				B1BA54D422E6A566DCCBC27E /* TicketListView.swift in Sources */,
+				3A4077403352101C716E2992 /* BlockView.swift in Sources */,
+				7BAF1D7DEEBB2031133DA369 /* LREdgeCutShapeView.swift in Sources */,
+				64C2637F3297FCB0F9CDFAFA /* LineShape.swift in Sources */,
+				B629D48B47A9E0456AF5C089 /* RoundedCorner.swift in Sources */,
+				303D926AF68E89FA629393AA /* ContentView.swift in Sources */,
+				4582ABC3CB380F26C379C55A /* MapView.swift in Sources */,
+				DFF49EE27B2CD56E9680EE2E /* RailMap.xcdatamodeld in Sources */,
+				1D0466BB7FACC22F5DFA86FB /* RailMap.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		86FD8F622AB9CDE4006D113C /* Sources */ = {
+		CB6CCF285912468D62EFC50B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86FD8F722AB9D412006D113C /* AddTicketViewModel.swift in Sources */,
-				86FD8F712AB9D40B006D113C /* VehiculeJourneysModel.swift in Sources */,
-				86FD8F692AB9CDE4006D113C /* RailMapTests.swift in Sources */,
-				86FD8F702AB9CE2D006D113C /* AddTicketTests.swift in Sources */,
+				CB93060ECDE44BC83A23422A /* TuistAssets+RailMapTests.swift in Sources */,
+				118C2F46ABA216D0A52268EA /* TuistBundle+RailMapTests.swift in Sources */,
+				1C8317A89AD870340F6CEBA4 /* DataController.swift in Sources */,
+				D1D4C02E3C1D9EA31E3DEB78 /* NewJourneyModel.swift in Sources */,
+				89953796219A9BC1C7C45BF0 /* StopInfoModel.swift in Sources */,
+				C47CAFEF9FDBA3B1521BEAF9 /* StopModel.swift in Sources */,
+				AD0BB21F6B43BE3D73C9BB18 /* RailMapApp.swift in Sources */,
+				09CF9267620C3DFDD71C52FF /* TicketListRowViewModelTests.swift in Sources */,
+				0570646292424B1C45687A8E /* ApiService.swift in Sources */,
+				84928D1320F58E74529E9190 /* ApiServiceProtocole.swift in Sources */,
+				5838840284D75B1D73215BDD /* NavitiaEndpoint.swift in Sources */,
+				6730423E71B57E01B5ECCBB4 /* VehiculeJourneysModel.swift in Sources */,
+				E5476E652520B7F26E5EFA28 /* AddTicketInfo.swift in Sources */,
+				2398C0EDDF0E196B082E6823 /* AddTicketViewModel.swift in Sources */,
+				A39CE8B0A1D2C63D3C0774E8 /* NewJourneyVM.swift in Sources */,
+				5FC1388F3C7FB53EF2A2420E /* TicketListRowViewModel.swift in Sources */,
+				0933E1163025FC0434CB44FD /* TicketListViewModel.swift in Sources */,
+				89BA9A6A985603D0EABD9AD3 /* AddTicketView.swift in Sources */,
+				AA5533AFB44C9160DFA23546 /* Section2SubtitleView.swift in Sources */,
+				52C3AD120F8A2D1721F5ABF4 /* listStopPointView.swift in Sources */,
+				A5DA165ED3820D7B35E52539 /* Section1AddTicketView.swift in Sources */,
+				20D634C05FC19920810CD7C1 /* BottomSheetView.swift in Sources */,
+				9BC973620FF88C5797D93B64 /* TicketDetailMainView.swift in Sources */,
+				B4A7DACB807724DB2B49CCCD /* TicketDetailTopView.swift in Sources */,
+				25070095D213B1D56F1A64EA /* TicketDetailView.swift in Sources */,
+				6BACCDC1F338D1C4B3929EEA /* TicketListFooterView.swift in Sources */,
+				F6FB053F739F6342CF38BF5D /* TicketListRowView.swift in Sources */,
+				90F39DC6E2EC433B43748AF7 /* TicketListView.swift in Sources */,
+				1054EEF1EA6B9F663123EF18 /* BlockView.swift in Sources */,
+				E3C2C0F7F688288D9EDDAB01 /* LREdgeCutShapeView.swift in Sources */,
+				E30851387BDF482E97F13008 /* LineShape.swift in Sources */,
+				ED923A4DE77125AF2505A5F3 /* RoundedCorner.swift in Sources */,
+				03D8F41FDE5EE727EB56C56D /* ContentView.swift in Sources */,
+				4BA8D9A9B7BF4EA0C4AE612E /* MapView.swift in Sources */,
+				42B2B0B276F02484764178E4 /* RailMap.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		86FD8F6B2AB9CDE4006D113C /* PBXTargetDependency */ = {
+		6DF77EDFF511F1B6E5F4BC25 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 86F87B5E2AA35E8C00F7B710 /* RailMap */;
-			targetProxy = 86FD8F6A2AB9CDE4006D113C /* PBXContainerItemProxy */;
+			name = RailMap;
+			target = 8ACF205A79524BFDDB782570 /* RailMap */;
+			targetProxy = 355B9D6ACC10C7E76BBCBA6F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		86F87B6D2AA35E8D00F7B710 /* Debug */ = {
+		101FD9EF45EB91A589A21513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Derived/InfoPlists/RailMap-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jeremie-ada.RailMap";
+				PRODUCT_NAME = RailMap;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		222A0013F8713B2D8E7F3763 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -545,11 +849,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -563,25 +867,104 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		86F87B6E2AA35E8D00F7B710 /* Release */ = {
+		25CB500A90726C5FF7F1551D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/RailMapTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jeremie-ada.RailMapTests";
+				PRODUCT_NAME = RailMapTests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RailMap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RailMap";
+				TEST_TARGET_NAME = RailMap;
+			};
+			name = Debug;
+		};
+		7761F1562DDE0B9AB0DFC3EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Derived/InfoPlists/RailMap-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jeremie-ada.RailMap";
+				PRODUCT_NAME = RailMap;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C18F5A177A4F3CDCECD7EB04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/RailMapTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jeremie-ada.RailMapTests";
+				PRODUCT_NAME = RailMapTests;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RailMap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RailMap";
+				TEST_TARGET_NAME = RailMap;
+			};
+			name = Release;
+		};
+		D9B737F56CEBD6E305C75692 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -608,11 +991,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -620,156 +1003,63 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		86F87B702AA35E8D00F7B710 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RailMap/Preview Content\"";
-				DEVELOPMENT_TEAM = MZ3E779E6C;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RailMap/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "jeremie-ada.RailMap";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		86F87B712AA35E8D00F7B710 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RailMap/Preview Content\"";
-				DEVELOPMENT_TEAM = MZ3E779E6C;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RailMap/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "jeremie-ada.RailMap";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		86FD8F6C2AB9CDE4006D113C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MZ3E779E6C;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "jeremie-ada.RailMapTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RailMap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RailMap";
-			};
-			name = Debug;
-		};
-		86FD8F6D2AB9CDE4006D113C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MZ3E779E6C;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "jeremie-ada.RailMapTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RailMap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RailMap";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		86F87B5A2AA35E8C00F7B710 /* Build configuration list for PBXProject "RailMap" */ = {
+		3DEB74EA6C85D106A3CBB6B2 /* Build configuration list for PBXProject "RailMap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				86F87B6D2AA35E8D00F7B710 /* Debug */,
-				86F87B6E2AA35E8D00F7B710 /* Release */,
+				222A0013F8713B2D8E7F3763 /* Debug */,
+				D9B737F56CEBD6E305C75692 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		86F87B6F2AA35E8D00F7B710 /* Build configuration list for PBXNativeTarget "RailMap" */ = {
+		AEBD87447DB688BEADFB3164 /* Build configuration list for PBXNativeTarget "RailMapTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				86F87B702AA35E8D00F7B710 /* Debug */,
-				86F87B712AA35E8D00F7B710 /* Release */,
+				25CB500A90726C5FF7F1551D /* Debug */,
+				C18F5A177A4F3CDCECD7EB04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		86FD8F6E2AB9CDE4006D113C /* Build configuration list for PBXNativeTarget "RailMapTests" */ = {
+		B647D5EF78E0808F398143A4 /* Build configuration list for PBXNativeTarget "RailMap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				86FD8F6C2AB9CDE4006D113C /* Debug */,
-				86FD8F6D2AB9CDE4006D113C /* Release */,
+				101FD9EF45EB91A589A21513 /* Debug */,
+				7761F1562DDE0B9AB0DFC3EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCSwiftPackageProductDependency section */
+		369A4A6BEA47BB2435F623AA /* RailMapHelpers */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RailMapHelpers;
+		};
+/* End XCSwiftPackageProductDependency section */
+
 /* Begin XCVersionGroup section */
-		8671CBB22B076ED300042F30 /* RailMap.xcdatamodeld */ = {
+		EF415039E72016E09CE62DE1 /* RailMap.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				8671CBB32B076ED300042F30 /* RailMap.xcdatamodel */,
+				4C7C00BB8B1B5940F911262E /* RailMap.xcdatamodel */,
 			);
-			currentVersion = 8671CBB32B076ED300042F30 /* RailMap.xcdatamodel */;
+			currentVersion = 4C7C00BB8B1B5940F911262E /* RailMap.xcdatamodel */;
 			path = RailMap.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 86F87B572AA35E8C00F7B710 /* Project object */;
+	rootObject = 4114EBF426FB8E04DB25A127 /* Project object */;
 }
