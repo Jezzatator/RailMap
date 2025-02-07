@@ -1,29 +1,17 @@
-name: Run Unit Tests
+name: Build and Test
 
 on:
-  push:
-    branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
+  push:
+    branches:
+      - all
 
 jobs:
-  test:
-    runs-on: macOS-latest
-
+  build:
+    runs-on: macos-latest
     steps:
-      - name: Checkout the code
-        uses: actions/checkout@v3
-
-      - name: Set up Xcode
-        uses: maxim-lobanov/setup-xcode@v1.5.1
-        with:
-            xcode-version: latest
-
-      - name: Install dependencies
-        run: |
-          cd RailMap
-
-      - name: Build and run tests
-        run: |
-          xcodebuild clean build analyze -scheme RailMap -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12'
-          
+      - uses: actions/checkout@v3
+      - uses: jdx/mise-action@v2
+      - run: tuist test RailMapiOSTests | xcbeautify --renderer github-actions
